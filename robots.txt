@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /js/
+Allow: /css/
+Allow: /images/
+Allow: /fonts/
+
+Sitemap: https://하수구싱크대변기막힘뚫음업체.com/sitemap.xml
+
+# last updated: 2025-08-21

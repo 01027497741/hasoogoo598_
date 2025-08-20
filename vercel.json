@@ -1,0 +1,16 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com"
+        }
+      ],
+      "destination": "https://하수구싱크대변기막힘뚫음업체.com/:path*",
+      "permanent": true
+    }
+  ]
+}
