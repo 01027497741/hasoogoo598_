@@ -123,36 +123,6 @@
       box-shadow: var(--shadow);
     }
 
-    .dock {
-      position: sticky;
-      bottom: 0;
-      background: rgba(255,255,255,.92);
-      backdrop-filter: saturate(200%) blur(8px);
-      border-top: 1px solid #e6eef7;
-      padding: 10px;
-      z-index: 60;
-    }
-    .dock .row {
-      display: flex;
-      gap: 10px;
-    }
-    .dock a {
-      flex: 1 1 0;
-      text-align: center;
-      padding: 14px;
-      border-radius: 14px;
-      font-weight: 900;
-    }
-    .dock a.call {
-      background: var(--accent);
-      color: #fff;
-    }
-    .dock a.pc {
-      background: linear-gradient(135deg, #e8f2ff, #ffffff);
-      border: 1px solid #dce9fb;
-      color: #0f2b46;
-    }
-
     footer {
       background: #0b2942;
       color: #d9e7f7;
@@ -162,6 +132,28 @@
       text-align: center;
       font-size: 14px;
       line-height: 1.6;
+    }
+    .footer-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-buttons a {
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .footer-buttons .btn-call {
+      background: var(--accent);
+      color: #fff;
+    }
+    .footer-buttons .btn-pc {
+      background: #e8f2ff;
+      color: #0f2b46;
+      border: 1px solid #c9dff9;
     }
   </style>
 </head>
@@ -195,20 +187,15 @@
     </div>
   </main>
 
-  <div class="dock" aria-label="빠른 실행">
-    <div class="container">
-      <div class="row">
-        <a class="call" href="tel:01095397676">📞 긴급직통전화 상담</a>
-        <a class="pc" href="pc.html">◎ 모바일버전 보기</a>
-      </div>
-    </div>
-  </div>
-
   <footer>
     <div class="container footer-inner">
       <div><strong>상호 :</strong> 하수구막힘변기막힘싱크대막힘고압세척</div>
       <div><strong>대표번호 :</strong> 010-9539-7676</div>
       <div>Copyright(C)2025 하수구막힘변기막힘싱크대막힘고압세척 All rights reserved.</div>
+      <div class="footer-buttons">
+        <a class="btn-call" href="tel:01095397676">📞 긴급직통전화 상담</a>
+        <a class="btn-pc" href="pc.html">💻 PC 메인으로</a>
+      </div>
     </div>
   </footer>
 </body>
