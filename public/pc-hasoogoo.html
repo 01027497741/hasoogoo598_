@@ -14,13 +14,37 @@
     body { margin:0; font-family:'Noto Sans KR', sans-serif; background:#fff; color:var(--ink); line-height:1.65; }
     a { color:inherit; text-decoration:none }
     .container { max-width:var(--maxw); margin:0 auto; padding:0 20px }
-    
+
     header { background:#fff; box-shadow:0 1px 0 rgba(0,0,0,.06); position:sticky; top:0; z-index:100 }
-    .topbar { display:flex; justify-content:space-between; align-items:center; height:64px }
-    .brand { font-weight:900; color:#103a61 }
-    nav ul { display:flex; list-style:none; gap:12px; margin:0; padding:0 }
-    nav a { font-weight:700; padding:10px 16px; border-radius:10px }
-    nav a:hover { background:#eef6ff }
+    .topbar { display:flex; flex-wrap: wrap; justify-content:space-between; align-items:center; gap: 10px; padding: 10px 0; }
+    .brand { font-weight:900; color:#103a61; flex: 1 1 100%; text-align: center; }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 8px;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      flex: 1 1 auto;
+      max-width: 180px;
+      text-align: center;
+    }
+    nav a {
+      font-weight: 700;
+      padding: 10px 12px;
+      background: #eef6ff;
+      color: #0a1a2b;
+      border-radius: 10px;
+      display: inline-block;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    nav a:hover {
+      background: #d6ebff;
+    }
 
     .hero { background:linear-gradient(180deg,#d7eeff 0%, #ffffff 100%); padding:50px 0; text-align:center }
     .hero h1 { font-size:30px; margin-bottom:12px; font-weight:900 }
