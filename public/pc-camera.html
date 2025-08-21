@@ -142,12 +142,31 @@
       border-radius: 12px;
       box-shadow: var(--shadow);
     }
+    .footer-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: nowrap;
+      margin-top: 30px;
+    }
+    .footer-buttons a {
+      flex: none;
+      min-width: 160px;
+      padding: 14px 20px;
+      font-weight: 800;
+      text-align: center;
+      border-radius: 12px;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .btn-call { background-color: var(--accent); color: white; }
+    .btn-pc { background: #e9f2fb; color: #0b2338; border: 1px solid #dce9fb; }
+
     footer {
       background: #0b2942;
       color: #d9e7f7;
-    }
-    .footer-inner {
-      padding: 26px 0;
+      margin-top: 40px;
+      padding: 30px 0;
       text-align: center;
       font-size: 14px;
       line-height: 1.6;
@@ -194,6 +213,10 @@
         <img src="images/camera1.jpg" alt="배관내시경 기기 이미지1" />
         <img src="images/camera2.jpg" alt="배관내시경 기기 이미지2" />
         <img src="images/camera3.jpg"  alt="배관내시경 작업 이미지3" />
+      </div>
+      <div class="footer-buttons">
+        <a href="tel:01095397676" class="btn-call">📞 긴급직통전화 상담</a>
+        <a href="pc.html" class="btn-pc">💻 PC 메인으로</a>
       </div>
     </div>
   </main>
