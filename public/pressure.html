@@ -164,35 +164,43 @@
       .gallery img { height: 200px; }
     }
 
-    /* 하단 고정 바 */
+    /* 하단 고정 바 (수정된 부분) */
     .dock {
       position: sticky;
       bottom: 0;
-      background: rgba(255,255,255,.92);
-      backdrop-filter: saturate(200%) blur(8px);
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: saturate(180%) blur(10px);
       border-top: 1px solid #e6eef7;
-      padding: 10px;
-      z-index: 60;
+      padding: 10px 16px;
+      z-index: 100;
     }
-    .dock .row {
+
+    .dock-buttons {
       display: flex;
+      justify-content: center;
       gap: 10px;
+      flex-wrap: wrap;
     }
-    .dock a {
+
+    .dock .btn {
       flex: 1 1 0;
-      text-align: center;
       padding: 14px;
+      font-weight: 800;
+      text-align: center;
       border-radius: 14px;
-      font-weight: 900;
+      font-size: 15px;
+      text-decoration: none;
     }
-    .dock a.call {
-      background: var(--accent);
-      color: #fff;
+
+    .dock .call {
+      background-color: var(--accent);
+      color: white;
     }
-    .dock a.pc {
-      background: linear-gradient(135deg, #e8f2ff, #ffffff);
+
+    .dock .pc {
+      background: linear-gradient(135deg, #f0f6ff, #ffffff);
+      color: #0b2338;
       border: 1px solid #dce9fb;
-      color: #0f2b46;
     }
 
     /* 푸터 */
@@ -257,9 +265,9 @@
   <!-- 모바일 하단 고정 탭 -->
   <div class="dock" aria-label="빠른 실행">
     <div class="container">
-      <div class="row">
-        <a class="call" href="tel:01095397676">📞 긴급직통전화 상담</a>
-        <a class="pc" href="pc.html">◎ PC버전 바로가기</a>      
+      <div class="dock-buttons">
+        <a class="btn call" href="tel:01095397676">📞 긴급직통전화 상담</a>
+        <a class="btn pc" href="pc.html">🖥️ PC버전 바로가기</a>
       </div>
     </div>
   </div>
@@ -284,5 +292,3 @@
   </script>
 </body>
 </html>
-
-
