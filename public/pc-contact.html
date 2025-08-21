@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>고객센터 | 하수구·싱크대·변기 뚫음</title>
+  <meta name="description" content="고객센터 상담 안내. 군산 하수구, 변기, 싱크대 막힘 관련 문의 및 긴급 상담 연결." />
+  <meta name="format-detection" content="telephone=no" />
+  <style>
+    :root {
+      --ink:#0b2338;
+      --muted:#52667a;
+      --brand:#0a57a4;
+      --brand-2:#0e84e5;
+      --accent:#fe3b2f;
+      --shadow:0 8px 24px rgba(0,0,0,.08);
+      --maxw:1320px;
+    }
+    *{box-sizing:border-box}
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.7;
+      background: #fff;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px }
+
+    .topbar {
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 1px 0 rgba(0,0,0,.06);
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .brand {
+      font-weight: 900;
+      color: #132f4a;
+    }
+    nav ul {
+      display: flex;
+      gap: 8px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      height: 40px;
+      padding: 0 14px;
+      border-radius: 10px;
+      font-weight: 700;
+      white-space: nowrap;
+      font-size: 15px;
+    }
+    nav a:hover { background: #eef6ff; }
+
+    .hero {
+      background: linear-gradient(180deg,#cfeeff 0%, #e7f6ff 40%, #ffffff 100%);
+      border-bottom: 1px solid #e6eef7;
+      padding: 48px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: 30px;
+      color: #0e2f4d;
+      font-weight: 900;
+    }
+    .hero p {
+      margin: 0 0 20px;
+      color: #334b66;
+      font-size: 18px;
+    }
+
+    .contact-box {
+      background: #fff;
+      border: 1px solid #e2edf9;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      display: inline-block;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .contact-number {
+      font-size: 36px;
+      font-weight: 900;
+      color: #0c3160;
+      margin: 10px 0;
+    }
+
+    .contact-img {
+      margin-top: 30px;
+    }
+    .contact-img img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .dock {
+      position: sticky;
+      bottom: 0;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: saturate(200%) blur(8px);
+      border-top: 1px solid #e6eef7;
+      padding: 10px;
+      z-index: 60;
+    }
+    .dock .row {
+      display: flex;
+      gap: 10px;
+    }
+    .dock a {
+      flex: 1 1 0;
+      text-align: center;
+      padding: 14px;
+      border-radius: 14px;
+      font-weight: 900;
+    }
+    .dock a.call {
+      background: var(--accent);
+      color: #fff;
+    }
+    .dock a.pc {
+      background: linear-gradient(135deg, #e8f2ff, #ffffff);
+      border: 1px solid #dce9fb;
+      color: #0f2b46;
+    }
+
+    footer {
+      background: #0b2942;
+      color: #d9e7f7;
+    }
+    .footer-inner {
+      padding: 26px 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">하수구 · 싱크대 · 변기 뚫음 | 고압세척·배관내시경</div>
+      <nav id="mainnav">
+        <ul>
+          <li><a href="pc.html">홈</a></li>
+          <li><a href="pc-hasoogoo.html">하수구·변기 뚫음</a></li>
+          <li><a href="pc-pressure.html">고압세척/관로탐지</a></li>
+          <li><a href="pc-camera.html">배관내시경</a></li>
+          <li><a href="pc-contact.html" aria-current="page">문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <h1>▶ 고객센터</h1>
+      <p>무엇을 도와드릴까요? 빠른 상담 연결을 원하시면 아래 번호로 바로 전화주세요.</p>
+      <div class="contact-box">
+        <div>📞 전화 상담</div>
+        <div class="contact-number"><a href="tel:01095397676">010-9539-7676</a></div>
+      </div>
+      <div class="contact-img">
+        <img src="images/contact.jpg" alt="고객센터 상담 이미지" />
+      </div>
+    </div>
+  </main>
+
+  <div class="dock" aria-label="빠른 실행">
+    <div class="container">
+      <div class="row">
+        <a class="call" href="tel:01095397676">📞 긴급직통전화 상담</a>
+        <a class="pc" href="pc.html">◎ 모바일버전 보기</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>상호 :</strong> 하수구막힘변기막힘싱크대막힘고압세척</div>
+      <div><strong>대표번호 :</strong> 010-9539-7676</div>
+      <div>Copyright(C)2025 하수구막힘변기막힘싱크대막힘고압세척 All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
