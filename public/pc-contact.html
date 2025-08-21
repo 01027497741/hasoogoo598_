@@ -36,32 +36,47 @@
     }
     .topbar-inner {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      height: 64px;
+      gap: 10px;
+      padding: 10px 0;
     }
     .brand {
       font-weight: 900;
       color: #132f4a;
+      flex: 1 1 100%;
+      text-align: center;
     }
     nav ul {
       display: flex;
+      flex-wrap: wrap;
       gap: 8px;
       padding: 0;
       margin: 0;
       list-style: none;
+      justify-content: center;
+    }
+    nav li {
+      flex: 1 1 auto;
+      max-width: 180px;
+      text-align: center;
     }
     nav a {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       height: 40px;
       padding: 0 14px;
       border-radius: 10px;
       font-weight: 700;
       white-space: nowrap;
       font-size: 15px;
+      background: #eef6ff;
+      color: #0b2338;
+      transition: background 0.2s;
     }
-    nav a:hover { background: #eef6ff; }
+    nav a:hover { background: #d6ebff; }
 
     .hero {
       background: linear-gradient(180deg,#cfeeff 0%, #e7f6ff 40%, #ffffff 100%);
@@ -144,6 +159,9 @@
     }
     .footer-inner {
       padding: 26px 0;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.6;
     }
   </style>
 </head>
