@@ -142,7 +142,7 @@
       box-shadow: var(--shadow);
     }
 
-    /* ✅ 하단 고정 바 정돈 */
+    /* ✅ 하단 고정 바 수정 */
     .dock {
       position: sticky;
       bottom: 0;
@@ -156,10 +156,11 @@
       display: flex;
       justify-content: center;
       gap: 10px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
     .dock .btn {
-      flex: 1 1 0;
+      flex: none;
+      min-width: 160px;
       padding: 14px;
       font-weight: 800;
       text-align: center;
@@ -217,7 +218,7 @@
     </div>
   </main>
 
-  <!-- ✅ 하단 고정 버튼 정돈 적용 -->
+  <!-- ✅ 하단 고정 버튼: 한 줄 고정 -->
   <div class="dock" aria-label="빠른 실행">
     <div class="container">
       <div class="dock-buttons">
