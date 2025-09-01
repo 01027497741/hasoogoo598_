@@ -136,24 +136,12 @@
     </section>
   </main>
 
-<!-- ✅ 블로그 + 버튼 묶음 (푸터 위) -->
+<!-- ✅ 푸터 바로 위: 공식 블로그 버튼만 표시 -->
 <div style="text-align:center; margin: 40px 0;">
   <a href="https://blog.naver.com/hasoogoo598_" target="_blank"
-     style="display:inline-block; padding:12px 24px; background:#2c5cc5; color:white;
-            border-radius:8px; font-weight:bold; font-size:15px; text-decoration:none;">
+     style="display:inline-block; padding:12px 24px; background:#2c5cc5; color:white; border-radius:8px; font-weight:bold; font-size:15px; text-decoration:none;">
     🔗 공식 블로그 바로가기
   </a>
-
-  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-top:20px;">
-    <a href="tel:050714274480" style="background:#fe3b2f; color:white; padding:12px 16px;
-       border-radius:14px; font-weight:800; min-width:150px; text-align:center;">
-      📞 긴급직통전화 상담
-    </a>
-    <a href="pc.html" style="background:#e8f2ff; color:#103a61; padding:12px 16px;
-       border-radius:14px; font-weight:800; min-width:150px; text-align:center;">
-      ◎ PC버전 바로가기
-    </a>
-  </div>
 </div>
 
 <!-- ✅ 푸터 -->
@@ -165,6 +153,17 @@
   </div>
 </footer>
 
+<!-- ✅ 모바일 고정 실행 버튼 유지 -->
+<div class="dock" aria-label="빠른 실행">
+  <div class="container">
+    <div class="row">
+      <a class="call" href="tel:050714274480">📞 긴급직통전화 상담</a>
+      <a class="pc" href="pc.html">◎ PC버전 바로가기</a>
+    </div>
+  </div>
+</div>
+
+
   <script>
     const btn = document.getElementById('menubtn');
     const nav = document.getElementById('mainnav');
@@ -175,6 +174,7 @@
   </script>
 </body>
 </html>
+
 
 
 
