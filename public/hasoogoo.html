@@ -44,12 +44,49 @@
     .list li{margin:6px 0}
     .imgwrap{margin:20px 0; border-radius:16px; overflow:hidden; box-shadow:var(--shadow)}
     .imgwrap img{display:block; width:100%; height:auto}
-    footer{background:#0b2942; color:#d9e7f7}
-    .footer-inner{padding:26px 0}
-    .foot-actions{display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:16px;}
-    .foot-actions a{display:inline-flex; align-items:center; gap:8px; padding:12px 16px; border-radius:14px; font-weight:800; min-width:150px; text-align:center; justify-content:center;}
-    .foot-actions .danger{background:var(--accent); color:#fff}
-    .foot-actions .pc{background:#e8f2ff; color:#103a61}
+    
+    /* ▼▼▼ [수정] 아래부터 푸터 및 하단 버튼 스타일을 index.html과 동일하게 맞춥니다 ▼▼▼ */
+    footer { background: #0b2942; color: #d9e7f7 }
+    .footer-inner { padding: 26px 0 }
+    .foot {
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .dock {
+      position: sticky;
+      bottom: 0;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: saturate(200%) blur(8px);
+      border-top: 1px solid #e6eef7;
+      padding: 10px;
+      z-index: 30;
+    }
+    .dock .row {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .dock a {
+      flex: 1 1 auto;
+      text-align: center;
+      padding: 14px;
+      border-radius: 14px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .dock a.call {
+      background: var(--accent);
+      color: #fff;
+    }
+    .dock a.pc {
+      background: linear-gradient(135deg,#e8f2ff,#ffffff);
+      border: 1px solid #dce9fb;
+      color: #0f2b46;
+    }
   </style>
 </head>
 <body>
@@ -136,30 +173,33 @@
     </section>
   </main>
 
-<!-- ✅ 블로그 버튼 -->
-<div style="text-align:center; margin: 40px 0 24px;">
-  <a href="https://blog.naver.com/hasoogoo598_" target="_blank"
-     style="display:inline-block; padding:12px 24px; background:#2c5cc5; color:white; border-radius:6px; text-decoration:none; font-size:16px;">
-    🔗 공식 블로그 바로가기
-  </a>
-</div>
+  <div style="text-align:center; margin: 30px 0;">
+    <a href="https://blog.naver.com/wkdusls" target="_blank"
+       style="display:inline-block; padding:12px 24px; background:#2c5cc5; color:white; border-radius:8px; font-weight:bold; font-size:15px; text-decoration:none;">
+      🔗 공식 블로그 바로가기
+    </a>
+  </div>
+  
+  <footer>
+    <div class="container footer-inner">
+      <div class="foot">
+        <div>
+          <div><strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체</div>
+          <div><strong>대표번호 :</strong> <a href="tel:050714274480">0507-1427-4480</a></div>
+          <div>Copyright(C)2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<!-- ✅ 푸터 -->
-<footer style="background-color:#002f5f; color:white; padding:24px 16px 140px; font-size:14px; line-height:1.6; text-align:center;">
-  <div><strong>상호 :</strong> 하수구막힘변기막힘싱크대막힘고압세척전문업체</div>
-  <div><strong>대표번호 :</strong> 0507-1427-4480</div>
-  <div>Copyright(C)2025 하수구막힘변기막힘싱크대막힘고압세척전문업체 All rights reserved.</div>
-</footer>
-
-<!-- ✅ 하단 고정 버튼 -->
-<div style="position: fixed; bottom: 0; left: 0; right: 0; background: white; display: flex; justify-content: space-around; align-items: center; padding: 12px 10px; box-shadow: 0 -2px 8px rgba(0,0,0,0.1); z-index: 999;">
-  <a href="tel:050714274480" style="flex:1; margin-right: 6px; background:#ff3b30; color:white; text-align:center; padding:12px 0; border-radius:10px; font-weight:bold; text-decoration:none;">
-    📞 긴급직통전화 상담
-  </a>
-  <a href="pc.html" style="flex:1; margin-left: 6px; background:#e5f0ff; color:#003399; text-align:center; padding:12px 0; border-radius:10px; font-weight:bold; text-decoration:none;">
-    💻 PC버전 바로가기
-  </a>
-</div>
+  <div class="dock">
+    <div class="container">
+      <div class="row">
+        <a class="call" href="tel:050714274480">긴급직통전화 상담</a>
+        <a class="pc" href="pc.html">◎ PC버전 바로가기</a>
+      </div>
+    </div>
+  </div>
 
   <script>
     const btn = document.getElementById('menubtn');
@@ -171,25 +211,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
