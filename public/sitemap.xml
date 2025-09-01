@@ -18,10 +18,20 @@
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/pc-contact.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/camera.html</loc>
     <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/pc-camera.html</loc>
+    <priority>0.6</priority>
     <changefreq>yearly</changefreq>
   </url>
 
@@ -30,10 +40,20 @@
     <priority>0.7</priority>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/pc-pressure.html</loc>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
 
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/hasoogoo.html</loc>
     <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/pc-hasoogoo.html</loc>
+    <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
