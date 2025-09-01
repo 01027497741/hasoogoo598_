@@ -14,12 +14,15 @@
   <meta name="format-detection" content="telephone=no" />
 
   <style>
+    :root {
+      --brand:#0a57a4; --brand-2:#0e84e5; --ink:#0a1a2b; --muted:#5b6e85; --bg:#f6f9ff; --accent:#fe3b2f; --radius:18px; --shadow:0 8px 24px rgba(0,0,0,.08); --maxw:1200px;
+    }
     body {margin:0; font-family:"Noto Sans KR", sans-serif; color:#0a1a2b; background:#fff; line-height:1.6}
     a {text-decoration:none; color:inherit}
     .container {width:100%; max-width:1200px; margin:0 auto; padding:0 20px}
 
     header {background:#0b2942; color:#fff; padding:20px 0}
-    header .brand {font-size:24px; font-weight:900; margin-bottom:12px}
+    header .brand {font-size:24px; font-weight:900; margin-bottom:12px; text-align: center;}
     nav ul {display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; gap: 8px; justify-content: center;}
     nav li {flex: 1 1 auto; max-width: 180px; text-align: center;}
     nav a {font-weight: 700; padding: 10px 12px; background: #fff; color: #0b2942; border-radius: 8px; display: inline-block; white-space: nowrap; transition: background 0.2s;}
@@ -52,52 +55,35 @@
       border-radius: 8px;
       margin-bottom: 12px;
     }
-
-    .cta-call {
-      background: #fe3b2f;
-      color: #fff;
-      text-align: center;
-      padding: 22px;
-      font-size: 20px;
-      font-weight: 900;
-      border-radius: 12px;
-      margin: 40px 20px;
+    
+    /* ▼▼▼ [수정] 다른 페이지와 동일한 버튼 스타일로 교체합니다 ▼▼▼ */
+    .footer-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 50px 20px;
     }
-    .cta-call a {
-      color: #fff;
-      display: block;
+    .footer-buttons a {
+      flex: 1 1 180px;
+      max-width: 240px;
+      padding: 14px 20px;
+      font-weight: 800;
+      text-align: center;
+      border-radius: 12px;
+      font-size: 15px;
       text-decoration: none;
     }
+    .btn-call { background-color: var(--accent); color: white; }
+    .btn-pc { background: #e8f2ff; color: #0b2338; border:1px solid #c9dff9;}
+    .btn-blog { background-color: var(--brand-2); color: white; }
 
     footer {
       background: #0b2942;
       color: #d9e7f7;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
       font-size: 14px;
-    }
-    .footer-actions {
-      margin-top: 16px;
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .footer-actions a {
-      padding: 12px 20px;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 15px;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .footer-actions .danger {
-      background: #fe3b2f;
-      color: #fff;
-    }
-    .footer-actions .ghost {
-      background: #e8f2ff;
-      color: #0b2942;
     }
   </style>
 </head>
@@ -141,8 +127,10 @@
         </div>
       </section>
 
-      <div class="cta-call">
-        <a href="tel:050714274480">📞 긴급 직통 상담 0507-1427-4480</a>
+      <div class="footer-buttons">
+        <a class="btn-call" href="tel:050714274480">📞 긴급직통전화 상담</a>
+        <a class="btn-blog" href="https://blog.naver.com/wkdusls" target="_blank">📘 공식 블로그 바로가기</a>
+        <a class="btn-pc" href="pc.html">🏠 PC 메인으로</a>
       </div>
     </div>
   </main>
@@ -151,13 +139,6 @@
     <div>상호 : 하수구막힘변기막힘싱크대막힘고압세척전문업체</div>
     <div>대표번호 : 0507-1427-4480</div>
     <div>Copyright(C)2025 하수구막힘변기막힘싱크대막힘고압세척전문업체 All rights reserved.</div>
-    <div class="footer-actions">
-      <a class="danger" href="tel:050714274480">📞 긴급직통전화 상담</a>
-      <a class="ghost" href="pc.html">🏠 PC 메인으로</a>
-    </div>
   </footer>
 </body>
 </html>
-
-
-
