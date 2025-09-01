@@ -31,7 +31,7 @@
       color: var(--ink);
       line-height: 1.7;
       background: #fff;
-      padding-bottom: 70px; /* ▼▼▼ [수정] 하단 버튼 바 공간 확보 ▼▼▼ */
+      padding-bottom: 70px; 
     }
     a { color: inherit; text-decoration: none; }
     .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
@@ -123,6 +123,11 @@
       box-shadow: var(--shadow);
     }
 
+    /* ▼▼▼ [수정] 각 섹션에 상단 여백을 주어 가독성을 높입니다 ▼▼▼ */
+    main .container > section {
+      margin-top: 48px;
+    }
+
     .bul {
       margin: 12px 0 0 0;
       padding-left: 18px;
@@ -175,7 +180,6 @@
       .gallery img { height: 200px; }
     }
     
-    /* ▼▼▼ [수정] 아래부터 푸터 및 하단 버튼 스타일을 index.html과 동일하게 맞춥니다 ▼▼▼ */
     footer { background: #0b2942; color: #d9e7f7 }
     .footer-inner { padding: 26px 0 }
     .foot {
@@ -186,9 +190,9 @@
       flex-wrap: wrap;
     }
     .dock {
-      position: fixed; /* position을 fixed로 변경 */
+      position: fixed;
       bottom: 0;
-      left: 0; /* left, right 추가 */
+      left: 0;
       right: 0;
       background: rgba(255,255,255,.92);
       backdrop-filter: saturate(200%) blur(8px);
