@@ -226,42 +226,33 @@
   </div>
 </main>
 
-<!-- ✅ 블로그 버튼 -->
-<div style="text-align:center; margin: 30px 0 10px;">
+<!-- ✅ 공식 블로그 버튼 -->
+<div style="text-align:center; margin: 40px 0;">
   <a href="https://blog.naver.com/hasoogoo598_" target="_blank"
      style="display:inline-block; padding:12px 24px; background:#2c5cc5; color:white; border-radius:8px; font-weight:bold; font-size:15px; text-decoration:none;">
     🔗 공식 블로그 바로가기
   </a>
 </div>
 
-<!-- ✅ 하단 고정 버튼 가림 방지용 여백 -->
-<div style="height:90px;"></div> <!-- 고정 버튼과 겹치지 않게 최소 여백 확보 -->
-
 <!-- ✅ 푸터 -->
-<footer style="background:#0b2942; color:#d9e7f7;">
-  <div class="container footer-inner" style="padding:20px 0; font-size:15px;">
+<footer style="background:#0c2c4c; color:white; padding:20px 16px; font-size:14px;">
+  <div style="max-width:800px; margin:0 auto;">
     <div><strong>상호 :</strong> 하수구막힘변기막힘싱크대막힘고압세척전문업체</div>
     <div><strong>대표번호 :</strong> 0507-1427-4480</div>
     <div>Copyright(C)2025 하수구막힘변기막힘싱크대막힘고압세척전문업체 All rights reserved.</div>
   </div>
 </footer>
 
-<!-- ✅ 고정 실행 버튼 -->
-<div class="dock" aria-label="빠른 실행"
-     style="position:fixed; bottom:0; left:0; width:100%; background:white; border-top:1px solid #ccc; z-index:999;">
-  <div class="container"
-       style="display:flex; justify-content:center; gap:12px; padding:12px 0;">
-    <a href="tel:050714274480"
-       style="background:#fe3b2f; color:white; padding:12px 16px; border-radius:14px; font-weight:800; min-width:150px; text-align:center;">
-      📞 긴급직통전화 상담
-    </a>
-    <a href="pc.html"
-       style="background:#e8f2ff; color:#103a61; padding:12px 16px; border-radius:14px; font-weight:800; min-width:150px; text-align:center;">
-      ◎ PC버전 바로가기
-    </a>
-  </div>
+<!-- ✅ 모바일 고정 버튼 -->
+<div style="position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid #ccc; z-index:9999; display:flex; justify-content:space-around; padding:12px 0;">
+  <a href="tel:050714274480" style="flex:1; margin:0 8px; background:#ff3b30; color:white; text-align:center; padding:12px 0; border-radius:8px; font-weight:bold; text-decoration:none; font-size:15px;">
+    📞 긴급직통전화 상담
+  </a>
+  <a href="pc.html" style="flex:1; margin:0 8px; background:#e0f0ff; color:#003366; text-align:center; padding:12px 0; border-radius:8px; font-weight:bold; text-decoration:none; font-size:15px;">
+    ◎ PC버전 바로가기
+  </a>
 </div>
-  
+
 <script>
   const btn = document.getElementById('menubtn');
   const nav = document.getElementById('mainnav');
@@ -270,6 +261,7 @@
     btn.setAttribute('aria-expanded', String(open));
   });
 </script>
+
 
 
 
