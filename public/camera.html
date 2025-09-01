@@ -31,6 +31,7 @@
       color: var(--ink);
       line-height: 1.7;
       background: #fff;
+      padding-bottom: 70px; /* ▼▼▼ [수정] 하단 버튼 바 공간 확보 ▼▼▼ */
     }
     a { color: inherit; text-decoration: none; }
     .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
@@ -173,47 +174,50 @@
       .gallery { grid-template-columns: repeat(2, 1fr); }
       .gallery img { height: 200px; }
     }
-
+    
+    /* ▼▼▼ [수정] 아래부터 푸터 및 하단 버튼 스타일을 index.html과 동일하게 맞춥니다 ▼▼▼ */
+    footer { background: #0b2942; color: #d9e7f7 }
+    .footer-inner { padding: 26px 0 }
+    .foot {
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
     .dock {
-      position: sticky;
+      position: fixed; /* position을 fixed로 변경 */
       bottom: 0;
+      left: 0; /* left, right 추가 */
+      right: 0;
       background: rgba(255,255,255,.92);
       backdrop-filter: saturate(200%) blur(8px);
       border-top: 1px solid #e6eef7;
       padding: 10px;
-      z-index: 60;
+      z-index: 30;
     }
     .dock .row {
       display: flex;
-      flex-wrap: nowrap; /* ✅ 줄바꿈 방지 */
+      flex-wrap: nowrap;
+      justify-content: center;
       gap: 10px;
     }
     .dock a {
-      flex: 1 1 0;
+      flex: 1 1 auto;
       text-align: center;
-      padding: 12px;
+      padding: 14px;
       border-radius: 14px;
       font-weight: 900;
-      white-space: nowrap; /* ✅ 텍스트 줄바꿈 방지 */
-      font-size: 14px;
+      white-space: nowrap;
     }
     .dock a.call {
       background: var(--accent);
       color: #fff;
     }
     .dock a.pc {
-      background: linear-gradient(135deg, #e8f2ff, #ffffff);
+      background: linear-gradient(135deg,#e8f2ff,#ffffff);
       border: 1px solid #dce9fb;
       color: #0f2b46;
-    }
-
-    footer {
-      background: #0b2942;
-      color: #d9e7f7;
-    }
-    .footer-inner {
-      padding: 26px 0;
-      text-align: center;
     }
   </style>
 </head>
@@ -271,32 +275,33 @@
     </div>
   </main>
 
-<!-- ✅ 푸터 바로 위: 공식 블로그 버튼만 표시 -->
-<div style="text-align:center; margin: 40px 0;">
-  <a href="https://blog.naver.com/hasoogoo598_" target="_blank"
-     style="display:inline-block; padding:12px 24px; background:#2c5cc5; color:white; border-radius:8px; font-weight:bold; font-size:15px; text-decoration:none;">
-    🔗 공식 블로그 바로가기
-  </a>
-</div>
-
-<!-- ✅ 푸터 -->
-<footer>
-  <div class="container footer-inner">
-    <div><strong>상호 :</strong> 하수구막힘변기막힘싱크대막힘고압세척전문업체</div>
-    <div><strong>대표번호 :</strong> 0507-1427-4480</div>
-    <div>Copyright(C)2025 하수구막힘변기막힘싱크대막힘고압세척전문업체 All rights reserved.</div>
+  <div style="text-align:center; margin: 30px 0;">
+    <a href="https://blog.naver.com/wkdusls" target="_blank"
+       style="display:inline-block; padding:12px 24px; background:#2c5cc5; color:white; border-radius:8px; font-weight:bold; font-size:15px; text-decoration:none;">
+      🔗 공식 블로그 바로가기
+    </a>
   </div>
-</footer>
 
-<!-- ✅ 모바일 고정 실행 버튼 유지 -->
-<div class="dock" aria-label="빠른 실행">
-  <div class="container">
-    <div class="row">
-      <a class="call" href="tel:050714274480">📞 긴급직통전화 상담</a>
-      <a class="pc" href="pc.html">◎ PC버전 바로가기</a>
+  <footer>
+    <div class="container footer-inner">
+      <div class="foot">
+        <div>
+          <div><strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체</div>
+          <div><strong>대표번호 :</strong> <a href="tel:050714274480">0507-1427-4480</a></div>
+          <div>Copyright(C)2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="dock">
+    <div class="container">
+      <div class="row">
+        <a class="call" href="tel:050714274480">긴급직통전화 상담</a>
+        <a class="pc" href="pc.html">◎ PC버전 바로가기</a>
+      </div>
     </div>
   </div>
-</div>
 
 <script>
   const btn = document.getElementById('menubtn');
@@ -308,13 +313,3 @@
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
