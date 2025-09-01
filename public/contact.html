@@ -227,15 +227,15 @@
 </main>
 
 <!-- ✅ 공식 블로그 바로가기 버튼 -->
-<div style="text-align:center; margin: 0;">
+<div style="text-align:center; margin: 40px 0 0;">
   <a href="https://blog.naver.com/hasoogoo598_" target="_blank"
      style="display:inline-block; padding:12px 24px; background:#2c5cc5; color:white; border-radius:6px; text-decoration:none; font-size:16px;">
     🔗 공식 블로그 바로가기
   </a>
 </div>
 
-<!-- ✅ 고정 버튼에 가려지지 않도록 여백 확보 -->
-<div style="height: 100px;"></div>
+<!-- ✅ 고정 버튼 가려짐 방지용 여백 확보 -->
+<div style="height: 120px;"></div>
 
 <!-- ✅ 푸터 -->
 <footer style="margin-top: 0;">
@@ -246,7 +246,7 @@
   </div>
 </footer>
 
-<!-- ✅ 하단 고정 버튼 (footer 밖으로 분리됨) -->
+<!-- ✅ 하단 고정 버튼 (footer 밖에 있어야 함) -->
 <div style="position: fixed; bottom: 0; left: 0; right: 0; background: white; display: flex; justify-content: space-around; align-items: center; padding: 12px 10px; box-shadow: 0 -2px 8px rgba(0,0,0,0.1); z-index: 999;">
   <a href="tel:050714274480" style="flex:1; margin-right: 6px; background:#ff3b30; color:white; text-align:center; padding:12px 0; border-radius:10px; font-weight:bold; text-decoration:none;">
     📞 긴급직통전화 상담
@@ -264,6 +264,7 @@
     btn.setAttribute('aria-expanded', String(open));
   });
 </script>
+
 
 
 
