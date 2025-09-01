@@ -151,11 +151,11 @@
       display: flex;
       justify-content: center;
       gap: 12px;
-      flex-wrap: nowrap;
+      flex-wrap: wrap; /* 모바일 화면에서 줄바꿈이 되도록 wrap으로 변경 */
       margin-top: 30px;
     }
     .footer-buttons a {
-      flex: none;
+      flex: 1 1 160px; /* 버튼들이 공간을 채우도록 flex-grow 설정 */
       min-width: 160px;
       padding: 14px 20px;
       font-weight: 800;
@@ -166,7 +166,10 @@
     }
     .btn-call { background-color: var(--accent); color: white; }
     .btn-pc { background: #e9f2fb; color: #0b2338; border: 1px solid #dce9fb; }
-
+    
+    /* ▼▼▼ [수정] 블로그 버튼을 위한 스타일 추가 ▼▼▼ */
+    .btn-blog { background-color: var(--brand-2); color: white; }
+    
     footer {
       background: #0b2942;
       color: #d9e7f7;
@@ -221,6 +224,9 @@
       </div>
       <div class="footer-buttons">
         <a href="tel:050714274480" class="btn-call">📞 긴급직통전화 상담</a>
+        
+        <a href="https://blog.naver.com/wkdusls" target="_blank" class="btn-blog">📘 공식 블로그 바로가기</a>
+        
         <a href="pc.html" class="btn-pc">💻 PC 메인으로</a>
       </div>
     </div>
@@ -235,7 +241,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
