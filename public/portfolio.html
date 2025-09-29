@@ -19,7 +19,13 @@
       --maxw:1120px;
     }
     * { box-sizing: border-box }
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Apple SD Gothic Neo, "Malgun Gothic", sans-serif; color: var(--ink); background: #fff; line-height: 1.65 }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Apple SD Gothic Neo, "Malgun Gothic", sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.65
+    }
     a { color: inherit; text-decoration: none }
     .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px }
     .topbar { background: #fff; position: sticky; top: 0; z-index: 40; box-shadow: 0 1px 0 rgba(0,0,0,.06) }
@@ -88,9 +94,7 @@
               <th style="width:20%;">작성일</th>
             </tr>
           </thead>
-          <tbody id="portfolio-list">
-            <!-- posts.js가 여기에 데이터를 채움 -->
-          </tbody>
+          <tbody id="portfolio-list"></tbody>
         </table>
       </div>
     </section>
@@ -128,28 +132,54 @@
       btn.setAttribute('aria-expanded', String(open));
     });
 
-    // ✅ 네이버 블로그 RSS → 시공사례 자동 반영
+    // ✅ 고정된 과거 사례 (항상 마지막)
+    const fixedPosts = [
+      {
+        title: "군산 싱크대 냄새 예방: 하수구·변기까지 확인하는 사전 신호 3가지",
+        link: "250902-deundeun-gunsan-sink-trap-guide.html",
+        date: "2025.09.02"
+      }
+    ];
+
     async function loadPosts() {
       const rssUrl = "https://rss.blog.naver.com/hasoogoo598_.xml";
-      const response = await fetch(rssUrl);
-      const text = await response.text();
+      let dynamicPosts = [];
 
-      const parser = new DOMParser();
-      const xml = parser.parseFromString(text, "application/xml");
-      const items = xml.querySelectorAll("item");
+      try {
+        const response = await fetch(rssUrl);
+        const text = await response.text();
+
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(text, "application/xml");
+        const items = xml.querySelectorAll("item");
+
+        items.forEach(item => {
+          const title = item.querySelector("title").textContent;
+          const link = item.querySelector("link").textContent;
+          const pubDate = new Date(item.querySelector("pubDate").textContent);
+          const dateStr = pubDate.toISOString().split("T")[0].replace(/-/g, ".");
+
+          dynamicPosts.push({ title, link, date: dateStr });
+        });
+      } catch (e) {
+        console.error("RSS 불러오기 실패", e);
+      }
+
+      // 합치기: RSS 최신글 + 고정글(마지막)
+      const allPosts = [...dynamicPosts, ...fixedPosts];
+
+      // 번호 매기기 (최신 = 큰 번호 → 고정글은 마지막 번호)
+      allPosts.forEach((p, idx) => {
+        p.no = allPosts.length - idx;
+      });
 
       let html = "";
-      items.forEach((item, idx) => {
-        const title = item.querySelector("title").textContent;
-        const link = item.querySelector("link").textContent;
-        const pubDate = new Date(item.querySelector("pubDate").textContent);
-        const dateStr = pubDate.toISOString().split("T")[0].replace(/-/g, ".");
-
+      allPosts.forEach(p => {
         html += `
           <tr>
-            <td>${items.length - idx}</td>
-            <td class="title"><a href="${link}" target="_blank">${title}</a></td>
-            <td>${dateStr}</td>
+            <td>${p.no}</td>
+            <td class="title"><a href="${p.link}" target="_blank">${p.title}</a></td>
+            <td>${p.date}</td>
           </tr>
         `;
       });
