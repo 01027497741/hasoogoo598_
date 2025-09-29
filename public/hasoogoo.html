@@ -29,53 +29,82 @@
   }
   </script>
   <style>
-    :root {
-      --brand:#0a57a4; --brand-2:#0e84e5; --accent:#fe3b2f; --ink:#0a1a2b;
-      --bg:#f6f9ff; --radius:18px; --shadow:0 8px 24px rgba(0,0,0,.08);
-      --maxw:1120px;
+    :root{
+      --brand:#0a57a4; --brand-2:#0e84e5; --ink:#0a1a2b; --muted:#5b6e85; --bg:#f6f9ff; --accent:#fe3b2f; --radius:18px; --shadow:0 8px 24px rgba(0,0,0,.08); --maxw:1120px;
     }
-    * { box-sizing: border-box }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Apple SD Gothic Neo, "Malgun Gothic", sans-serif;
-      color: var(--ink);
-      background: #fff;
-      line-height: 1.65
+    *{box-sizing:border-box}
+    body{margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Apple SD Gothic Neo,"Malgun Gothic",sans-serif; color:var(--ink); background:#fff; line-height:1.65; padding-bottom: 70px;}
+    a{color:inherit; text-decoration:none}
+    .container{width:100%; max-width:var(--maxw); margin:0 auto; padding:0 20px}
+    .topbar{background:#fff; position:sticky; top:0; z-index:40; box-shadow:0 1px 0 rgba(0,0,0,.06)}
+    .topbar-inner{display:flex; align-items:center; justify-content:space-between; height:64px}
+    .brand{font-weight:900; color:#103a61}
+    nav ul{display:flex; list-style:none; gap:8px; margin:0; padding:0}
+    nav a{display:inline-flex; align-items:center; height:40px; padding:0 14px; border-radius:12px; font-weight:700}
+    nav a:hover{background:#f0f6ff}
+    .menu-toggle{display:none; background:#fff; border:1px solid #e5eefc; padding:8px 10px; border-radius:12px}
+    @media (max-width:860px){
+      .menu-toggle{display:inline-flex}
+      nav{position:fixed; inset:64px 0 auto 0; background:#fff; border-top:1px solid #eef3fb; transform:translateY(-16px); opacity:0; pointer-events:none; transition:.2s ease; box-shadow:var(--shadow)}
+      nav.open{transform:translateY(0); opacity:1; pointer-events:auto}
+      nav ul{flex-direction:column}
+      nav a{height:auto; padding:14px 20px; border-radius:0}
     }
-    a { color: inherit; text-decoration: none }
-    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px }
-    .topbar { background: #fff; position: sticky; top: 0; z-index: 40; box-shadow: 0 1px 0 rgba(0,0,0,.06) }
-    .topbar-inner { display: flex; align-items: center; justify-content: space-between; height: 64px }
-    .brand { font-weight: 900; color: #103a61 }
-    nav ul { display: flex; list-style: none; gap: 8px; margin: 0; padding: 0 }
-    nav a { display: inline-flex; align-items: center; height: 40px; padding: 0 14px; border-radius: 12px; font-weight: 700 }
-    nav a:hover { background: #f0f6ff }
-    .menu-toggle { display: none; background: #fff; border: 1px solid #e5eefc; padding: 8px 10px; border-radius: 12px }
-    @media (max-width: 860px) {
-      .menu-toggle { display: inline-flex }
-      nav { position: fixed; inset: 64px 0 auto 0; background: #fff; border-top: 1px solid #eef3fb; transform: translateY(-16px); opacity: 0; pointer-events: none; transition: .2s ease; box-shadow: var(--shadow) }
-      nav.open { transform: translateY(0); opacity: 1; pointer-events: auto }
-      nav ul { flex-direction: column }
-      nav a { height: auto; padding: 14px 20px; border-radius: 0 }
-    }
-    .page-header { background: var(--bg); padding: 50px 0; text-align:center; }
-    .page-header h1 { margin:0; font-size:28px; }
-    .content-section { padding: 40px 0; }
-    .content-section h2 { margin-top: 40px; margin-bottom: 16px; font-size: 22px; border-bottom: 2px solid var(--bg); padding-bottom: 8px; }
-    .content-section h2:first-child { margin-top: 0; }
-    .note { background: var(--bg); border-left: 4px solid var(--brand); border-radius: 8px; padding: 20px; margin: 20px 0;}
-    .list { margin: 0; padding-left: 20px; }
-    .list li { margin-bottom: 10px; }
-    .imgwrap { margin: 30px 0; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
-    .imgwrap img { display: block; width: 100%; height: auto; }
+    .hero{background:linear-gradient(180deg,#e8f4ff 0%,#ffffff 60%); padding:48px 0}
+    .hero h1{margin:0 0 8px; font-size:28px}
+    .cta p{margin-top:12px; font-weight:600; color:#103a61}
+    section{padding:40px 0}
+    h2{margin:0 0 12px; font-size:22px}
+    p{margin:0 0 10px}
+    .note{background:#f7fbff; border:1px solid #e2edf9; border-radius:14px; padding:16px;}
+    .list{margin:8px 0 0; padding-left:20px}
+    .list li{margin:6px 0}
+    .imgwrap{margin:20px 0; border-radius:16px; overflow:hidden; box-shadow:var(--shadow)}
+    .imgwrap img{display:block; width:100%; height:auto}
+    
     footer { background: #0b2942; color: #d9e7f7 }
     .footer-inner { padding: 26px 0 }
-    .foot { display: flex; gap: 12px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .dock { position: sticky; bottom: 0; background: rgba(255,255,255,.92); backdrop-filter: saturate(200%) blur(8px); border-top: 1px solid #e6eef7; padding: 10px; z-index: 30; }
-    .dock .row { display: flex; flex-wrap: nowrap; justify-content: center; gap: 10px; }
-    .dock a { flex: 1 1 auto; text-align: center; padding: 14px; border-radius: 14px; font-weight: 900; white-space: nowrap; }
-    .dock a.call { background: var(--accent); color: #fff; }
-    .dock a.pc { background: linear-gradient(135deg,#e8f2ff,#ffffff); border: 1px solid #dce9fb; color: #0f2b46; }
+    .foot {
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .dock {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: saturate(200%) blur(8px);
+      border-top: 1px solid #e6eef7;
+      padding: 10px;
+      z-index: 30;
+    }
+    .dock .row {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .dock a {
+      flex: 1 1 auto;
+      text-align: center;
+      padding: 14px;
+      border-radius: 14px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .dock a.call {
+      background: var(--accent);
+      color: #fff;
+    }
+    .dock a.pc {
+      background: linear-gradient(135deg,#e8f2ff,#ffffff);
+      border: 1px solid #dce9fb;
+      color: #0f2b46;
+    }
   </style>
 </head>
 <body>
@@ -95,15 +124,20 @@
       </nav>
     </div>
   </header>
-  <main>
-    <div class="page-header">
-      <div class="container">
-        <h1>하수구 · 변기 뚫음</h1>
+
+  <div class="hero">
+    <div class="container">
+      <h1>하수구·싱크대·변기막힘뚫음 | 고압세척·배관내시경</h1>
+      <div class="cta">
+        <p>※ 급한 문의는 페이지 하단의 번호로 연락 주세요.</p>
       </div>
     </div>
-    <div class="content-section">
+  </div>
+
+  <main>
+    <section>
       <div class="container">
-        <h2>막힌 하수구 LPC 배관세척</h2>
+        <h2>▶막힌 하수구 LPC 배관세척</h2>
         <div class="note">
           <ul class="list">
             <li>파이프에 무리를 주지않는 안전한 세척공법</li>
@@ -111,16 +145,26 @@
             <li>배관의 반 영구적 사용, 배관 교체시기 연장, 각종 필터수명연장</li>
           </ul>
         </div>
-        <h2>욕실하수구 막힘 원인</h2>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>▶ 욕실하수구 막힘 원인</h2>
         <ol class="list">
-          <li>머리카락, 세면도구, 때수건, 장난감이 주로 막힘의 원인입니다.</li>
+          <li>머리카락, 세면도구, 때수건, 장난감이 주로 막힌다.</li>
           <li>장난감, 면도기, 칫솔 등이 기름과 머리카락에 뒤엉켜 나오지 않는 경우가 있어 재시공을 해야 하므로 이런 점에 주의합니다.</li>
-          <li>머리카락은 하수구로 내려가면 비눗물과 뒤엉켜 꺾이는 부분에 걸려서 막히게 됩니다.</li>
+          <li>머리카락은 하수구로 내려가면 비눗물과 뒤엉켜 꺾이는 부분에 걸려서 막힘.</li>
           <li>하수구의 경사가 물이 내려가는 방향의 반대, 즉 역경사가 되면 더욱 자주 막힙니다.</li>
           <li>하수구의 뚜껑은 막고 자주 청소하며 사용해야 합니다.</li>
           <li>세면대의 물이 내려가지 않는 경우는 트랩에 머리카락 등 부유물에 의해 막히므로 트랩을 해체하여 청소를 해주면 됩니다.</li>
         </ol>
-        <h2>주방하수구 막힘 원인</h2>
+      </div>
+    </section>
+
+    <section style="background:#f7fbff">
+      <div class="container">
+        <h2>▶ 주방하수구 막힘 원인</h2>
         <ol class="list">
           <li>주방은 음식물, 기름찌꺼기에 의해 주로 막힙니다.</li>
           <li>기름은 하수구로 내려가면 응고되어 배수가 되어 하수구가 막히게 되므로 기름은 분리하여 폐기물 수집상에게 보내는 것이 좋습니다.</li>
@@ -129,7 +173,12 @@
           <li>신축할 때 하수도의 부실시공으로 인해 역경사가 될 경우 자주 막히므로 재시공하는 것이 비용이 절약됩니다.</li>
           <li>주방 하수구는 다른 곳보다 규격이 작으므로 주의해야 합니다.</li>
         </ol>
-        <h2>외부하수구 막힘 원인</h2>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>▶ 외부하수구 막힘 원인</h2>
         <ol class="list">
           <li>노후 된 주택의 외부하수구가 노깡(점토관)으로 되어 있어 오래되면 지반이 침하되어 깨져서 물이 빠지지가 않습니다.</li>
           <li>외부하수구는 나뭇잎, 흙, 모래, 각종쓰레기 때문에 하수구가 막힙니다.</li>
@@ -140,14 +189,16 @@
           <img src="images/hasoogoo.jpg" alt="하수구·변기 뚫음 작업 이미지" />
         </div>
       </div>
-    </div>
+    </section>
   </main>
+
   <div style="text-align:center; margin: 30px 0;">
     <a href="https://blog.naver.com/hasoogoo598_" target="_blank"
        style="display:inline-block; padding:12px 24px; background:#2c5cc5; color:white; border-radius:8px; font-weight:bold; font-size:15px; text-decoration:none;">
-      🔗 든든설비 공식 블로그
+      🔗 공식 블로그 바로가기
     </a>
   </div>
+  
   <footer>
     <div class="container footer-inner">
       <div class="foot">
@@ -159,6 +210,7 @@
       </div>
     </div>
   </footer>
+
   <div class="dock">
     <div class="container">
       <div class="row">
@@ -167,6 +219,7 @@
       </div>
     </div>
   </div>
+
   <script>
     const btn = document.getElementById('menubtn');
     const nav = document.getElementById('mainnav');
