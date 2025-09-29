@@ -12,22 +12,6 @@
   <meta property="og:url" content="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/portfolio.html" />
   <meta property="og:type" content="website" />
   <meta name="format-detection" content="telephone=no" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Plumber",
-    "name": "든든설비",
-    "@id": "https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/",
-    "url": "https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/",
-    "image": "https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/images/sink-unclog-complete.jpg",
-    "telephone": "0507-1427-4480",
-    "priceRange": "견적 후 결정",
-    "address": { "@type": "PostalAddress", "streetAddress": "정자로 45", "addressLocality": "군산시", "addressRegion": "전북특별자치도", "postalCode": "54042", "addressCountry": "KR" },
-    "geo": { "@type": "GeoCoordinates", "latitude": "35.955931", "longitude": "126.759881" },
-    "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" } ],
-    "areaServed": { "@type": "City", "name": "군산시" } 
-  }
-  </script>
   <style>
     :root {
       --brand:#0a57a4; --brand-2:#0e84e5; --accent:#fe3b2f; --ink:#0a1a2b;
@@ -35,13 +19,7 @@
       --maxw:1120px;
     }
     * { box-sizing: border-box }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Apple SD Gothic Neo, "Malgun Gothic", sans-serif;
-      color: var(--ink);
-      background: #fff;
-      line-height: 1.65
-    }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Apple SD Gothic Neo, "Malgun Gothic", sans-serif; color: var(--ink); background: #fff; line-height: 1.65 }
     a { color: inherit; text-decoration: none }
     .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px }
     .topbar { background: #fff; position: sticky; top: 0; z-index: 40; box-shadow: 0 1px 0 rgba(0,0,0,.06) }
@@ -110,23 +88,9 @@
               <th style="width:20%;">작성일</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>3</td>
-              <td class="title"><a href="#">[군산 조촌동 세면대 부속 교체] 물이 안 빠질 때, 원인은 '이 작은 부품' 때문입니다</a></td>
-              <td>2025.09.06</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td class="title"><a href="#">군산 싱크대 냄새 예방: 하수구·변기까지 확인하는 사전 신호 3가지</a></td>
-              <td>2025.09.02</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="title"><a href="#">군산변기교체 전문시공 – 10년을 책임질 든든설비의 변기설치 기초공사</a></td>
-                <td>2025.09.01</td>
-            </tr>
-            </tbody>
+          <tbody id="portfolio-list">
+            <!-- posts.js가 여기에 데이터를 채움 -->
+          </tbody>
         </table>
       </div>
     </section>
@@ -163,8 +127,37 @@
       const open = nav.classList.toggle('open');
       btn.setAttribute('aria-expanded', String(open));
     });
+
+    // ✅ 네이버 블로그 RSS → 시공사례 자동 반영
+    async function loadPosts() {
+      const rssUrl = "https://rss.blog.naver.com/hasoogoo598_.xml";
+      const response = await fetch(rssUrl);
+      const text = await response.text();
+
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(text, "application/xml");
+      const items = xml.querySelectorAll("item");
+
+      let html = "";
+      items.forEach((item, idx) => {
+        const title = item.querySelector("title").textContent;
+        const link = item.querySelector("link").textContent;
+        const pubDate = new Date(item.querySelector("pubDate").textContent);
+        const dateStr = pubDate.toISOString().split("T")[0].replace(/-/g, ".");
+
+        html += `
+          <tr>
+            <td>${items.length - idx}</td>
+            <td class="title"><a href="${link}" target="_blank">${title}</a></td>
+            <td>${dateStr}</td>
+          </tr>
+        `;
+      });
+
+      document.getElementById("portfolio-list").innerHTML = html;
+    }
+
+    document.addEventListener("DOMContentLoaded", loadPosts);
   </script>
 </body>
 </html>
-
-
