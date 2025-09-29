@@ -32,6 +32,7 @@
   </script>
 
   <style>
+    /* 전체 레이아웃 스타일 */
     :root {
       --brand:#0a57a4; --brand-2:#0e84e5; --accent:#fe3b2f; --ink:#0a1a2b;
       --bg:#f6f9ff; --radius:18px; --shadow:0 8px 24px rgba(0,0,0,.08);
@@ -61,18 +62,17 @@
       nav ul { flex-direction: column }
       nav a { height: auto; padding: 14px 20px; border-radius: 0 }
     }
-
-    .page-header { background: var(--bg); padding: 50px 0; text-align:center; }
-    .page-header h1 { margin:0; font-size:28px; }
-    .portfolio-section { padding: 40px 0; }
-    .portfolio-table { width: 100%; border-collapse: collapse; font-size: 15px; }
-    .portfolio-table th, .portfolio-table td { padding: 12px 8px; border-bottom: 1px solid #e5e5e5; text-align: center; }
-    .portfolio-table th { background-color: #f9f9f9; font-weight: 700; }
-    .portfolio-table td.title { text-align: left; }
-    .portfolio-table td.title a:hover { text-decoration: underline; color: var(--brand); }
-    /* [최종 수정] 마우스 hover 효과를 회색에서 하늘색으로 변경 */
-    .portfolio-table tbody tr:hover { background-color: #f0f6ff; }
-
+    /* 시공 사례 페이지 전용 스타일 */
+    .page-header { background: var(--bg); padding: 50px 0; text-align:center; }
+    .page-header h1 { margin:0; font-size:28px; }
+    .portfolio-section { padding: 40px 0; }
+    .portfolio-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    .portfolio-table th, .portfolio-table td { padding: 12px 8px; border-bottom: 1px solid #e5e5e5; text-align: center; }
+    .portfolio-table th { background-color: #f9f9f9; font-weight: 700; }
+    .portfolio-table td.title { text-align: left; }
+    .portfolio-table td.title a:hover { text-decoration: underline; color: var(--brand); }
+    .portfolio-table tbody tr:hover { background-color: #f0f6ff; }
+    /* 푸터 및 하단 바 스타일 */
     footer { background: #0b2942; color: #d9e7f7 }
     .footer-inner { padding: 26px 0 }
     .foot { display: flex; gap: 12px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
