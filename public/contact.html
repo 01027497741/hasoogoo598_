@@ -42,30 +42,24 @@
       --shadow: 0 8px 24px rgba(0,0,0,.06);
       --maxw: 1120px;
     }
-    * { box-sizing: border-box }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Apple SD Gothic Neo, "Malgun Gothic", sans-serif;
-      color: var(--ink);
-      background: #fff;
-      line-height: 1.65
-    }
-    a { color: inherit; text-decoration: none }
-    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px }
-    .topbar { background: #fff; position: sticky; top: 0; z-index: 40; box-shadow: 0 1px 0 rgba(0,0,0,.06) }
-    .topbar-inner { display: flex; align-items: center; justify-content: space-between; height: 64px }
-    .brand { font-weight: 900; color: #1d774b; }
-    nav ul { display: flex; list-style: none; gap: 8px; margin: 0; padding: 0 }
-    nav a { display: inline-flex; align-items: center; height: 40px; padding: 0 14px; border-radius: 12px; font-weight: 700 }
-    nav a:hover { background: var(--brand-light) }
-    nav a.active { background: var(--brand); color: #fff; }
-    .menu-toggle { display: none; background: #fff; border: 1px solid #e5eefc; padding: 8px 10px; border-radius: 12px }
-    @media (max-width: 860px) {
-      .menu-toggle { display: inline-flex }
-      nav { position: fixed; inset: 64px 0 auto 0; background: #fff; border-top: 1px solid #eef3fb; transform: translateY(-16px); opacity: 0; pointer-events: none; transition: .2s ease; box-shadow: var(--shadow) }
-      nav.open { transform: translateY(0); opacity: 1; pointer-events: auto }
-      nav ul { flex-direction: column }
-      nav a { height: auto; padding: 14px 20px; border-radius: 0 }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Apple SD Gothic Neo,"Malgun Gothic",sans-serif; color:var(--ink); background:#fff; line-height:1.65; padding-bottom: 70px;}
+    a{color:inherit; text-decoration:none}
+    .container{width:100%; max-width:var(--maxw); margin:0 auto; padding:0 20px}
+    .topbar{background:#fff; position:sticky; top:0; z-index:40; box-shadow:0 1px 0 rgba(0,0,0,.06)}
+    .topbar-inner{display:flex; align-items:center; justify-content:space-between; height:64px}
+    .brand{font-weight:900; color:var(--brand)}
+    nav ul{display:flex; list-style:none; gap:8px; margin:0; padding:0}
+    nav a{display:inline-flex; align-items:center; height:40px; padding:0 14px; border-radius:12px; font-weight:700}
+    nav a:hover{background:var(--brand-light)}
+    nav a.active { background: var(--brand); color: #fff; }
+    .menu-toggle{display:none; background:#fff; border:1px solid #e5eefc; padding:8px 10px; border-radius:12px}
+    @media (max-width:860px){
+      .menu-toggle{display:inline-flex}
+      nav{position:fixed; inset:64px 0 auto 0; background:#fff; border-top:1px solid #eef3fb; transform:translateY(-16px); opacity:0; pointer-events:none; transition:.2s ease; box-shadow:var(--shadow)}
+      nav.open{transform:translateY(0); opacity:1; pointer-events:auto}
+      nav ul{flex-direction:column}
+      nav a{height:auto; padding:14px 20px; border-radius:0}
     }
     .page-header { background: var(--bg); padding: 50px 0; text-align:center; }
     .page-header h1 { margin:0; font-size:28px; }
@@ -88,12 +82,45 @@
     }
     footer { background: #1a2e25; color: #e1e8e5; }
     .footer-inner { padding: 26px 0 }
-    .foot { display: flex; gap: 12px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .dock { position: sticky; bottom: 0; background: rgba(255,255,255,.95); backdrop-filter: saturate(180%) blur(10px); border-top: 1px solid #e6eef7; padding: 10px; z-index: 30; }
-    .dock .row { display: flex; flex-wrap: nowrap; justify-content: center; gap: 10px; }
-    .dock a { flex: 1 1 auto; text-align: center; padding: 14px; border-radius: 14px; font-weight: 900; white-space: nowrap; }
-    .dock a.call { background: var(--accent); color: #fff; }
-    .dock a.pc { background: #f0f8f5; border: 1px solid #dce9fb; color: #1d774b; }
+    .foot {
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .dock {
+      position: sticky;
+      bottom: 0;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: saturate(180%) blur(10px);
+      border-top: 1px solid #e6eef7;
+      padding: 10px;
+      z-index: 30;
+    }
+    .dock .row {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .dock a {
+      flex: 1 1 auto;
+      text-align: center;
+      padding: 14px;
+      border-radius: 14px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .dock a.call {
+      background: var(--accent);
+      color: #fff;
+    }
+    .dock a.pc {
+      background: var(--brand-light);
+      border: 1px solid #dce9fb;
+      color: var(--brand);
+    }
   </style>
 </head>
 <body>
@@ -101,16 +128,16 @@
     <div class="container topbar-inner">
       <div class="brand">하수구·싱크대·변기막힘뚫음 | 고압세척·배관내시경</div>
       <button class="menu-toggle" id="menubtn" aria-expanded="false" aria-controls="mainnav">메뉴</button>
-      <nav id="mainnav" aria-label="주요 탭">
-        <ul>
-          <li><a href="index.html">홈</a></li>
-          <li><a href="hasoogoo.html">하수구·변기 뚫음</a></li>
-          <li><a href="pressure.html">고압세척/관로탐지</a></li>
-          <li><a href="camera.html">배관내시경</a></li>
-          <li><a href="portfolio.html">시공 사례</a></li>
-          <li><a href="contact.html" class="active" aria-current="page">문의</a></li>
-        </ul>
-      </nav>
+      <nav id="mainnav" aria-label="주요 탭">
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="hasoogoo.html">하수구·변기 뚫음</a></li>
+          <li><a href="pressure.html">고압세척/관로탐지</a></li>
+          <li><a href="camera.html">배관내시경</a></li>
+          <li><a href="portfolio.html">시공 사례</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">문의</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -131,7 +158,7 @@
         <div class="map-area">
           <h3>찾아오시는 길</h3>
           <p>전북특별자치도 군산시 정자로 45</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.84920409893!2d126.75730607632902!3d35.9559353158013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35700d6639d62817%3A0x8613231362e5845c!2z7JeQ67aA7YKo67O47J2Y64KoIOq1sOq1rOyngCDspJHroZwgNDU!5e0!3m2!1sko!2skr!4v1696052062895!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.758334861195!2d126.7573060762417!3d35.95604197258909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35700d1645000001%3A0x1d30379de1aca38!2z7KCE67aE7YWM7ZWZ7Zi464-EIOq1rOyekOu5oOq0gA!5e0!3m2!1sko!2skr!4v1696010055811!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
