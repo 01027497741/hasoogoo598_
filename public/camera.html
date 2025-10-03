@@ -238,6 +238,19 @@
 /* (번호 동그라미를 따로 쓰신 경우 표시용은 유지하도록 예외) */
 .panel .badge, .panel .num { background: var(--brand); color: #fff; }
 
+    /* 패널 내부 줄간격을 모두 동일하게 통일 */
+.panel p,
+.panel li {
+  line-height: 1.6; /* 숫자는 원하시는 간격에 맞게 조정 가능 (1.6~1.8 추천) */
+  margin-bottom: 8px; /* 항목 간격도 일정하게 */
+}
+
+/* 마지막 항목은 불필요하게 여백 안 생기게 */
+.panel p:last-child,
+.panel li:last-child {
+  margin-bottom: 0;
+}
+
   </style>
 </head>
 <body>
@@ -332,6 +345,7 @@
 </script>
 </body>
 </html>
+
 
 
 
