@@ -82,6 +82,7 @@
       background: #145c39;
     }
 
+    /* 📱 모바일용 폰트 보정 */
     @media (max-width: 480px) {
       body {
         font-size: 1.05rem;
@@ -91,6 +92,13 @@
       }
       h2 {
         font-size: 1.05rem;
+      }
+    }
+
+    /* 💻 데스크탑용 h1 보정 */
+    @media (min-width: 720px) {
+      h1 {
+        font-size: 28px;
       }
     }
   </style>
