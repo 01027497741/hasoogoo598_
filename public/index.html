@@ -15,12 +15,13 @@
   <meta property="og:type" content="website" />
   <meta name="format-detection" content="telephone=no" />
 
-  <!-- SEO/Perf small wins -->
+  <!-- SEO/Perf -->
   <link rel="canonical" href="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/">
   <link rel="preconnect" href="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com" crossorigin>
   <link rel="icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+  <!-- Organization (Plumber) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,14 +41,12 @@
       "addressCountry": "KR"
     },
     "geo": { "@type": "GeoCoordinates", "latitude": "35.955931", "longitude": "126.759881" },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }],
     "areaServed": { "@type": "City", "name": "군산시" }
   }
   </script>
@@ -86,7 +85,6 @@
     nav a{display:inline-flex;align-items:center;height:40px;padding:0 14px;border-radius:12px;font-weight:700}
     nav a:hover{background:var(--brand-light)}
     .menu-toggle{display:none;background:#fff;border:1px solid #e5eefc;padding:8px 10px;border-radius:12px}
-
     @media (max-width:860px){
       .menu-toggle{display:inline-flex}
       nav{position:fixed;left:0;right:0;top:64px;background:#fff;border-top:1px solid #eef3fb;transform:translateY(-16px);opacity:0;pointer-events:none;transition:.2s ease;box-shadow:var(--shadow)}
@@ -118,6 +116,20 @@
     .feature-item .content{padding:24px;flex-grow:1}
     .feature-item h3{margin:0 0 10px;font-size:20px;color:var(--brand)}
     .feature-item p{margin:0;color:#444}
+
+    /* Media grid & figure (new) */
+    .media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .figure{background:#fff;border:1px solid #eee;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .figure img{display:block;width:100%;height:auto}
+    .figcap{padding:12px 14px;font-size:.95rem;color:#333}
+
+    /* FAQ (new) */
+    .faq{max-width:900px;margin:10px auto 0}
+    .faq details{background:#fff;border:1px solid #eee;border-radius:12px;box-shadow:var(--shadow);padding:14px 16px}
+    .faq details+details{margin-top:12px}
+    .faq summary{font-weight:800;cursor:pointer;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq p{margin:10px 0 0;color:#444}
 
     /* Footer */
     footer{background:#1a2e25;color:#e1e8e5}
@@ -151,6 +163,7 @@
   </header>
 
   <main>
+    <!-- Hero -->
     <section class="hero">
       <h1>군산 든든설비: 막힌 하수구·변기, 전문가가 해결합니다.</h1>
       <p>숙련된 배관공 팀이 양질의 서비스와 신속한 응답, 효율적인 결과를 제공합니다.</p>
@@ -165,6 +178,7 @@
       </div>
     </section>
 
+    <!-- Why choose -->
     <section class="features">
       <div class="container">
         <h2 class="section-title">왜 군산 시민들은 든든설비를 선택할까요?</h2>
@@ -200,6 +214,7 @@
       </div>
     </section>
 
+    <!-- 장비 강조 -->
     <section class="section-padding section-bg">
       <div class="container">
         <h2 class="section-title">첨단 장비가 증명하는 기술력</h2>
@@ -227,6 +242,7 @@
       </div>
     </section>
 
+    <!-- 사례 1 -->
     <section class="section-padding">
       <div class="container">
         <h2 class="section-title">든든한 시공사례 1: 맨홀 막힘 해결</h2>
@@ -253,6 +269,7 @@
       </div>
     </section>
 
+    <!-- 추천사 -->
     <section class="section-padding section-bg">
       <div class="container">
         <h2 class="section-title">고객님들이 직접 전하는 이야기</h2>
@@ -271,6 +288,7 @@
       </div>
     </section>
 
+    <!-- 사례 2 -->
     <section class="section-padding">
       <div class="container">
         <h2 class="section-title">든든한 시공사례 2: 변기 막힘 해결</h2>
@@ -297,6 +315,7 @@
       </div>
     </section>
 
+    <!-- 또 다른 추천사 -->
     <section class="section-padding section-bg">
       <div class="container">
         <h2 class="section-title">고객님들이 직접 전하는 또 다른 이야기</h2>
@@ -314,8 +333,70 @@
         </div>
       </div>
     </section>
+
+    <!-- ===== 현장 사진 & 안내 (신규) ===== -->
+    <section class="section-padding section-bg" id="work-photos">
+      <div class="container">
+        <h2 class="section-title">든든설비, 이렇게 작업합니다</h2>
+        <div class="media-grid">
+          <figure class="figure">
+            <img src="images/251010-deundeun-gunsan-cost-consultation-checklist.jpg"
+                 alt="체크리스트로 작업 방식과 예상 비용을 투명하게 안내하는 상담 장면"
+                 loading="lazy" decoding="async" />
+            <figcaption class="figcap">작업 전 비용·방식 투명 안내, 동의 후 진행</figcaption>
+          </figure>
+
+          <figure class="figure">
+            <img src="images/251010-deundeun-gunsan-inspection-camera-diagnosis.jpg"
+                 alt="배관 내시경 모니터로 막힘 원인을 설명하는 든든설비 기사"
+                 loading="lazy" decoding="async" />
+            <figcaption class="figcap">내시경으로 원인을 눈으로 확인 → 불필요한 비용 없이 정확히</figcaption>
+          </figure>
+
+          <figure class="figure">
+            <img src="images/251010-deundeun-gunsan-night-emergency-pipe-inspection.jpg"
+                 alt="야간 긴급 상황에서 외부 배관을 점검하는 든든설비 기사"
+                 loading="lazy" decoding="async" />
+            <figcaption class="figcap">급한 상황도 우선 확인 후 가장 빠른 시간으로 안내</figcaption>
+          </figure>
+
+          <figure class="figure">
+            <img src="images/251010-deundeun-gunsan-outdoor-pipe-repair-wrench.jpg"
+                 alt="렌치로 외부 배관 연결부를 정밀 조정하는 든든설비 기사"
+                 loading="lazy" decoding="async" />
+            <figcaption class="figcap">원인별 맞춤 공정으로 재발까지 잡는 정밀 시공</figcaption>
+          </figure>
+        </div>
+
+        <p style="text-align:center;margin-top:22px;font-weight:800;">
+          📞 빠른 상담은 <a href="tel:0507-1427-4480" style="text-decoration:underline;">0507-1427-4480</a> (현장 중일 땐 확인 즉시 회신)
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FAQ (신규) ===== -->
+    <section class="section-padding" id="faq">
+      <div class="container">
+        <h2 class="section-title">자주 묻는 질문</h2>
+        <div class="faq">
+          <details>
+            <summary>비용은 보통 얼마나 나오나요?</summary>
+            <p>막힘의 원인과 현장 상황, 필요한 장비(내시경, 고압세척기 등)에 따라 비용이 달라집니다. 든든설비는 절대로 어림짐작으로 과도한 비용을 요구하지 않습니다. 먼저 현장을 정확히 진단하고, 작업 방식과 예상 비용을 고객님께 투명하게 안내해 드린 후 동의를 얻어 작업을 시작하니 걱정하지 않으셔도 됩니다.</p>
+          </details>
+          <details>
+            <summary>주말이나 늦은 밤에도 작업하시나요?</summary>
+            <p>네, 주말·공휴일·늦은 밤에도 급한 문제가 생기셨다면 먼저 연락 주세요. 사장님이 전화를 직접 받으나 다른 현장 작업 중에는 통화가 어려울 수 있습니다. 확인 즉시 가능한 가장 빠른 방문 시간을 조율해 드립니다.</p>
+          </details>
+          <details>
+            <summary>약품을 써도, 뚫어봐도 자꾸 재발해요. 해결 가능할까요?</summary>
+            <p>가능합니다. ‘반복되는 막힘’은 반드시 근본 원인이 있습니다. 내시경으로 구조·이물질 등 정확한 원인을 확인한 뒤, 고압세척 등 맞춤 공정으로 처리해 재발 가능성을 줄입니다. 다른 곳에서 해결이 어려웠던 사례도 자신 있게 해결해드립니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- 외부 링크 -->
   <div style="text-align:center;margin:30px 0;">
     <a href="https://blog.naver.com/hasoogoo598_" target="_blank"
        style="display:inline-block;padding:12px 24px;background:#1d774b;color:#fff;border-radius:8px;font-weight:bold;font-size:15px;text-decoration:none;">
@@ -323,6 +404,7 @@
     </a>
   </div>
 
+  <!-- Footer -->
   <footer>
     <div class="container footer-inner">
       <div class="foot">
@@ -335,6 +417,7 @@
     </div>
   </footer>
 
+  <!-- Dock -->
   <div class="dock" role="region" aria-label="빠른 실행">
     <div class="container">
       <div class="row">
@@ -344,6 +427,41 @@
     </div>
   </div>
 
+  <!-- FAQ 구조화데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"비용은 보통 얼마나 나오나요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"막힘의 원인과 현장 상황, 필요한 장비(내시경, 고압세척기 등)에 따라 달라집니다. 현장을 정확히 진단하고 작업 방식과 예상 비용을 투명하게 안내한 후 동의를 얻어 작업을 시작합니다."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"주말이나 늦은 밤에도 작업하시나요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"네. 주말·공휴일·늦은 밤에도 급한 문제가 생기면 먼저 연락 주세요. 사장님이 전화를 직접 받지만 현장 작업 중에는 통화가 어려울 수 있으며, 확인 즉시 가장 빠른 방문 가능 시간을 안내드립니다."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"약품을 써도, 뚫어봐도 자꾸 재발하는데 해결 가능한가요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"가능합니다. 반복되는 막힘의 근본 원인을 내시경으로 확인하고, 구조적 문제·이물질 여부를 파악한 뒤 고압세척 등 맞춤 공정으로 처리해 재발을 줄입니다."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Nav toggle -->
   <script>
     (function(){
       const btn = document.getElementById('menubtn');
@@ -359,5 +477,3 @@
   </script>
 </body>
 </html>
-
-
