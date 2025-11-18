@@ -61,7 +61,7 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- ✅ 추가: 시공 사례/블로그 글 3건 -->
+  <!-- ✅ 추가: 시공 사례/블로그 글 4건 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/250902-deundeun-gunsan-sink-trap-guide.html</loc>
     <priority>0.7</priority>
@@ -76,6 +76,12 @@
 
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/gunsan-plumbing-holiday-checklist.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/gunsan_toilet_cement_before_after.html</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
