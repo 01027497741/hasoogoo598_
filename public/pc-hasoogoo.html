@@ -22,34 +22,48 @@
     .container { max-width:var(--maxw); margin:0 auto; padding:0 20px }
 
     header { background:#fff; box-shadow:0 1px 0 rgba(0,0,0,.06); position:sticky; top:0; z-index:100 }
-    .topbar { display:flex; flex-wrap: wrap; justify-content:space-between; align-items:center; gap: 10px; padding: 10px 0; }
-    .brand { font-weight:900; color:#103a61; flex: 1 1 100%; text-align: center; }
+    
+    /* 🚩 로고와 메뉴를 수직으로 정렬하여 가운데 배치 */
+    .topbar { 
+      display:flex; 
+      flex-direction: column; 
+      align-items:center; 
+      gap: 12px; 
+      padding: 15px 0; 
+    }
+    .brand { font-weight:900; color:#103a61; text-align: center; font-size: 18px; }
+    
+    nav { width: 100%; }
     nav ul {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap; /* 한 줄 유지 */
       list-style: none;
       gap: 8px;
-      justify-content: center;
+      justify-content: center; /* ★ 메뉴 가로 가운데 정렬 */
       margin: 0;
       padding: 0;
     }
     nav li {
-      flex: 1 1 auto;
-      max-width: 180px;
+      flex: 0 0 auto; /* 너비 고정 해제 */
       text-align: center;
     }
     nav a {
       font-weight: 700;
-      padding: 10px 12px;
+      padding: 10px 16px;
       background: #eef6ff;
       color: #0a1a2b;
       border-radius: 10px;
       display: inline-block;
       white-space: nowrap;
       transition: background 0.2s;
+      font-size: 14px;
     }
     nav a:hover {
       background: #d6ebff;
+    }
+    nav a[aria-current="page"] {
+      background: var(--brand);
+      color: #fff;
     }
 
     .hero { background:linear-gradient(180deg,#d7eeff 0%, #ffffff 100%); padding:50px 0 0; text-align:center } 
@@ -65,13 +79,14 @@
     .image-wrap img { max-width:100%; border-radius:16px; box-shadow:var(--shadow) }
     
     .footer-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 50px; margin-bottom: 50px; }
-    .footer-buttons a { flex: 1 1 180px; max-width: 240px; padding: 14px 20px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 15px; }
+    .footer-buttons a { flex: 1 1 180px; max-width: 240px; padding: 14px 20px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 15px; transition: transform 0.2s; }
+    .footer-buttons a:hover { transform: translateY(-3px); }
     .call { background:var(--accent); color:#fff }
     .pc { background:#e8f2ff; color:#0f2b46; border:1px solid #c9dff9 }
     .blog { background:var(--brand-2); color:#fff; }
 
-    footer { background:#0b2942; color:#d9e7f7; padding:30px 0; margin-top:0 }
-    .footer-inner { text-align: center; font-size: 14px; line-height: 1.6;}
+    footer { background:#0b2942; color:#d9e7f7; padding:40px 0; margin-top:0 }
+    .footer-inner { text-align: center; font-size: 14px; line-height: 1.8; }
   </style>
 </head>
 <body>
@@ -80,11 +95,12 @@
       <div class="brand">하수구·싱크대·변기막힘뚫음 | 고압세척·배관내시경</div>
       <nav>
         <ul>
-          <li><a href="pc.html">홈</a></li>
-          <li><a href="pc-hasoogoo.html" aria-current="page">하수구·변기 뚫음</a></li>
-          <li><a href="pc-pressure.html">고압세척/관로탐지</a></li>
-          <li><a href="pc-camera.html">배관내시경</a></li>
-          <li><a href="pc-contact.html">문의</a></li>
+          <li><a href="./pc.html">홈</a></li>
+          <li><a href="./pc-hasoogoo.html" aria-current="page">하수구·변기 뚫음</a></li>
+          <li><a href="./pc-pressure.html">고압세척/관로탐지</a></li>
+          <li><a href="./pc-camera.html">배관내시경</a></li>
+          <li><a href="./pc-portfolio.html">시공 사례</a></li>
+          <li><a href="./pc-contact.html">문의</a></li>
         </ul>
       </nav>
     </div>
@@ -137,13 +153,13 @@
     </section>
 
     <div class="image-wrap">
-      <img src="images/hasoogoo.jpg" alt="하수구·변기 뚫음 작업 사진">
+      <img src="./images/hasoogoo.jpg" alt="하수구·변기 뚫음 작업 사진">
     </div>
 
     <div class="footer-buttons">
-      <a class="call" href="tel:050714274480">📞 긴급직통전화 상담</a>
+      <a class="call" href="tel:0507-1427-4480">📞 긴급직통전화 상담</a>
       <a class="blog" href="https://blog.naver.com/hasoogoo598_" target="_blank">📘 공식 블로그 바로가기</a>
-      <a class="pc" href="pc.html">🏠 PC 메인으로</a>
+      <a class="pc" href="./pc.html">🏠 PC 메인으로</a>
     </div>
   </main>
 
@@ -152,7 +168,7 @@
       <div>
         <strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체<br />
         <strong>대표번호 :</strong> 0507-1427-4480<br />
-        Copyright(C)2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.
+        Copyright(C) 2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.
       </div>
     </div>
   </footer>
