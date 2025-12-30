@@ -14,7 +14,7 @@
   <meta name="format-detection" content="telephone=no" />
   <style>
     :root {
-      --brand:#0a57a4; --brand-2:#0e84e5; --ink:#0a1a2b; --muted:#5b6e85; --bg:#f6f9ff; --accent:#fe3b2f; --radius:18px; --shadow:0 8px 24px rgba(0,0,0,.08); --maxw:1120px;
+      --brand:#0a57a4; --brand-2:#0e84e5; --brand-dark:#0b2338; --ink:#0a1a2b; --muted:#5b6e85; --bg:#f6f9ff; --accent:#fe3b2f; --radius:18px; --shadow:0 8px 24px rgba(0,0,0,.08); --maxw:1120px;
     }
     * { box-sizing: border-box; }
     body { margin:0; font-family:'Noto Sans KR', sans-serif; background:#fff; color:var(--ink); line-height:1.65; overflow-x: hidden; }
@@ -23,7 +23,7 @@
 
     header { background:#fff; box-shadow:0 1px 0 rgba(0,0,0,.06); position:sticky; top:0; z-index:100 }
     
-    /* 🚩 로고와 메뉴를 수직으로 정렬하여 완벽하게 정중앙 배치 */
+    /* 헤더 탭 메뉴 정중앙 정렬 */
     .topbar { 
       display:flex; 
       flex-direction: column; 
@@ -36,17 +36,14 @@
     nav { width: 100%; }
     nav ul {
       display: flex;
-      flex-wrap: wrap; /* 모바일 대응을 위해 랩 허용 */
+      flex-wrap: wrap;
       list-style: none;
       gap: 8px;
-      justify-content: center; /* ★ 메뉴 가로 정중앙 정렬 */
+      justify-content: center; 
       margin: 0;
       padding: 0;
     }
-    nav li {
-      flex: 0 0 auto;
-      text-align: center;
-    }
+    nav li { flex: 0 0 auto; text-align: center; }
     nav a {
       font-weight: 700;
       padding: 10px 16px;
@@ -58,13 +55,8 @@
       transition: background 0.2s;
       font-size: 13px;
     }
-    nav a:hover {
-      background: #d6ebff;
-    }
-    nav a[aria-current="page"] {
-      background: var(--brand);
-      color: #fff;
-    }
+    nav a:hover { background: #d6ebff; }
+    nav a[aria-current="page"] { background: var(--brand); color: #fff; }
 
     .hero { background:linear-gradient(180deg,#d7eeff 0%, #ffffff 100%); padding:50px 0 20px; text-align:center } 
     .hero h1 { font-size: clamp(22px, 5vw, 30px); margin-bottom:12px; font-weight:900 }
@@ -78,6 +70,7 @@
     .image-wrap { margin:30px 0; text-align:center }
     .image-wrap img { max-width:100%; border-radius:16px; box-shadow:var(--shadow) }
     
+    /* 하단 버튼 영역 */
     .footer-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 50px 0; }
     .footer-buttons a { flex: 1 1 180px; max-width: 240px; padding: 14px 20px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 15px; transition: transform 0.2s; }
     .footer-buttons a:hover { transform: translateY(-3px); }
@@ -85,8 +78,10 @@
     .pc { background:#e8f2ff; color:#0f2b46; border:1px solid #c9dff9 }
     .blog { background:var(--brand-2); color:#fff; }
 
-    footer { background:#0b2942; color:#d9e7f7; padding:40px 0; margin-top:0; text-align: center; }
+    /* 🚩 다른 페이지와 일치시킨 남색 풋터 스타일 */
+    footer { background: var(--brand-dark); color:#d9e7f7; padding:40px 0; margin-top:0; text-align: center; }
     .footer-inner { font-size: 13px; line-height: 1.8; }
+    footer strong { color: #fff; }
   </style>
 </head>
 <body>
