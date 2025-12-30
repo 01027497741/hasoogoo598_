@@ -7,11 +7,13 @@
   <title>시공 사례 (PC버전) | 든든설비</title>
   <style>
     :root {
-      --brand: #1d774b; 
-      --brand-light: #f0f8f5; 
+      /* 남색 컨셉으로 색상 재설정 */
+      --brand: #0a57a4; 
+      --brand-light: #eef6ff; 
+      --brand-dark: #0b2942;
       --accent: #fe3b2f; 
-      --ink: #222222; 
-      --bg: #f7f9f8; 
+      --ink: #0a1a2b; 
+      --bg: #f6f9ff; 
       --radius: 12px;
       --maxw: 1120px;
     }
@@ -20,33 +22,48 @@
     a { color:inherit; text-decoration:none; transition: 0.2s; }
     .container { max-width:var(--maxw); margin:0 auto; padding:0 20px; }
 
-    /* 메뉴 한 줄 고정 헤더 */
-    header { background:#fff; border-bottom: 1px solid #eee; position:sticky; top:0; z-index:100; padding: 12px 0; }
+    /* 메뉴 한 줄 고정 헤더 - 남색 테마 */
+    header { background:#fff; border-bottom: 1px solid #e2edf9; position:sticky; top:0; z-index:100; padding: 12px 0; }
     .topbar { display:flex; justify-content:space-between; align-items:center; gap: 15px; }
-    .brand { font-weight: 900; color: var(--brand); font-size: 18px; letter-spacing: -1px; flex-shrink: 0; white-space: nowrap; }
+    .brand { font-weight: 900; color: #103a61; font-size: 18px; letter-spacing: -1px; flex-shrink: 0; white-space: nowrap; }
+    
     nav { flex-shrink: 0; }
     nav ul { display: flex; list-style: none; gap: 6px; margin: 0; padding: 0; align-items: center; }
-    nav a { font-weight: 700; padding: 10px 14px; background: var(--brand-light); color: var(--brand); border-radius: 8px; display: block; font-size: 14px; white-space: nowrap; }
+    nav a { 
+      font-weight: 700; 
+      padding: 10px 14px; 
+      background: var(--brand-light); 
+      color: var(--ink); 
+      border-radius: 10px; 
+      display: block; 
+      font-size: 14px; 
+      white-space: nowrap; 
+    }
     nav a[aria-current="page"] { background: var(--brand); color: #fff; }
+    nav a:hover { background: #d6ebff; }
 
-    .page-header { background: linear-gradient(135deg, #1d774b, #3bb98f); padding: 55px 0; text-align: center; color: white; }
-    .page-header h1 { margin: 0; font-size: 32px; font-weight: 900; }
+    /* 페이지 헤더 - 남색 그라데이션 */
+    .page-header { background: linear-gradient(180deg, #d7eeff 0%, #ffffff 100%); padding: 55px 0; text-align: center; color: var(--ink); border-bottom: 1px solid #e2edf9; }
+    .page-header h1 { margin: 0; font-size: 32px; font-weight: 900; color: #103a61; }
     
+    /* 시공 사례 섹션 */
     .portfolio-section { padding: 50px 0; background: var(--bg); min-height: 500px; }
-    .portfolio-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
-    .portfolio-table th { background-color: #f8fcf9; padding: 20px 15px; font-weight: 700; border-bottom: 2px solid var(--brand); color: #333; }
-    .portfolio-table td { padding: 18px 15px; border-bottom: 1px solid #eee; text-align: center; }
+    .portfolio-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: var(--radius); overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .portfolio-table th { background-color: #eef6ff; padding: 20px 15px; font-weight: 700; border-bottom: 2px solid var(--brand); color: #103a61; }
+    .portfolio-table td { padding: 18px 15px; border-bottom: 1px solid #e2edf9; text-align: center; }
     .portfolio-table td.title { text-align: left; font-weight: 500; font-size: 16px; }
+    .portfolio-table td.title a:hover { color: var(--brand); text-decoration: underline; }
 
+    /* 하단 버튼들 */
     .footer-buttons { display: flex; justify-content: center; gap: 15px; margin: 50px 0; }
     .footer-buttons a { width: 260px; padding: 18px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
     .call { background:var(--accent); color:#fff; }
-    .blog { background:var(--brand); color:#fff; }
-    .pc { background: #555; color:#fff; }
+    .blog { background: #0e84e5; color:#fff; } /* 블로그 버튼 남색 계열 */
+    .pc { background: #e8f2ff; color:#0f2b46; border:1px solid #c9dff9; }
 
-    /* 🚩 원래대로 복구한 풋터 스타일 */
-    footer { background:#1a2e25; color:#e1e8e5; padding:30px 0; }
-    .footer-inner { text-align: center; font-size: 14px; line-height: 1.6; }
+    /* 🚩 원래대로 복구한 남색 풋터 스타일 */
+    footer { background: var(--brand-dark); color: #d9e7f7; padding: 35px 0; }
+    .footer-inner { text-align: center; font-size: 14px; line-height: 1.8; }
   </style>
 </head>
 <body>
@@ -70,6 +87,7 @@
     <div class="page-header">
       <div class="container">
         <h1>든든설비 시공 사례</h1>
+        <p style="margin-top:10px; color:var(--muted);">군산 전 지역의 생생한 현장 기록을 확인하세요.</p>
       </div>
     </div>
 
@@ -83,13 +101,14 @@
               <th style="width:180px;">작성일</th>
             </tr>
           </thead>
-          <tbody id="portfolio-list"></tbody>
+          <tbody id="portfolio-list">
+            </tbody>
         </table>
 
         <div class="footer-buttons">
           <a class="call" href="tel:0507-1427-4480">📞 긴급직통전화 상담</a>
           <a class="blog" href="https://blog.naver.com/hasoogoo598_" target="_blank">📘 공식 블로그 바로가기</a>
-          <a class="pc" href="portfolio.html">📱 모바일 버전으로 보기</a>
+          <a class="pc" href="pc.html">🏠 PC 메인으로</a>
         </div>
       </div>
     </section>
