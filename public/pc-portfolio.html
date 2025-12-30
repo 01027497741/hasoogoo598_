@@ -1,203 +1,205 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="robots" content="index, follow" />
-  <meta name="viewport" content="width=1200" />
-  <title>시공 사례 (PC버전) | 든든설비</title>
-  <meta name="description" content="군산 든든설비의 최신 하수구, 변기, 싱크대 막힘 해결 시공 사례를 날짜별로 확인하세요." />
-  <meta property="og:description" content="군산 든든설비의 최신 하수구, 변기, 싱크대 막힘 해결 시공 사례를 날짜별로 확인하세요." />
-  <meta property="og:image" content="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/images/sink-unclog-complete.jpg" />
-  <meta property="og:title" content="시공 사례 (PC버전) | 든든설비" />
-  <meta property="og:url" content="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/pc-portfolio.html" />
-  <meta property="og:type" content="website" />
-  <meta name="format-detection" content="telephone=no" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Plumber",
-    "name": "든든설비",
-    "@id": "https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/",
-    "url": "https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/",
-    "image": "https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/images/sink-unclog-complete.jpg",
-    "telephone": "0507-1427-4480",
-    "priceRange": "견적 후 결정",
-    "address": { "@type": "PostalAddress", "streetAddress": "정자로 45", "addressLocality": "군산시", "addressRegion": "전북특별자치도", "postalCode": "54042", "addressCountry": "KR" },
-    "geo": { "@type": "GeoCoordinates", "latitude": "35.955931", "longitude": "126.759881" },
-    "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" } ],
-    "areaServed": { "@type": "City", "name": "군산시" } 
-  }
-  </script>
-  <style>
-    :root {
+  <meta charset="utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=1200" />
+  <title>시공 사례 (PC버전) | 든든설비</title>
+  <meta name="description" content="군산 든든설비의 최신 하수구, 변기, 싱크대 막힘 해결 시공 사례를 확인하세요." />
+  <style>
+    :root {
       --brand: #1d774b; 
       --brand-light: #f0f8f5; 
       --accent: #fe3b2f; 
       --ink: #222222; 
       --bg: #f7f9f8; 
-      --radius: 16px;
-      --shadow: 0 8px 24px rgba(0,0,0,.06);
-      --maxw: 1120px;
-    }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family:'Noto Sans KR', sans-serif; background:#fff; color:var(--ink); line-height:1.65; }
-    a { color:inherit; text-decoration:none }
-    .container { max-width:var(--maxw); margin:0 auto; padding:0 20px }
+      --radius: 12px;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:'Noto Sans KR', sans-serif; background:#fff; color:var(--ink); line-height:1.65; }
+    a { color:inherit; text-decoration:none; transition: 0.2s; }
+    .container { max-width:var(--maxw); margin:0 auto; padding:0 20px; }
 
-    header { background:#fff; box-shadow:0 1px 0 rgba(0,0,0,.06); position:sticky; top:0; z-index:100 }
-    .topbar { display:flex; flex-wrap: wrap; justify-content:space-between; align-items:center; gap: 10px; padding: 10px 0; max-width: var(--maxw); margin: 0 auto; }
-    .brand { font-weight:900; color:var(--brand); flex: 1 1 100%; text-align: center; font-size: 20px; }
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-      gap: 8px;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
-    nav li {
-      flex: 1 1 auto;
-      max-width: 180px;
-      text-align: center;
-    }
-    nav a {
-      font-weight: 700;
-      padding: 10px 12px;
-      background: var(--brand-light);
-      color: var(--brand);
-      border-radius: 10px;
-      display: inline-block;
-      white-space: nowrap;
-      transition: background 0.2s;
-    }
-    nav a[aria-current="page"] { background: var(--brand); color: #fff; }
-    nav a:hover {
-      background: #dceae4;
-    }
-
-    .hero { background:var(--bg); padding:50px 0; text-align:center } 
-    .hero h1 { font-size:30px; margin:0; font-weight:900 }
+    /* Header & Navigation */
+    header { background:#fff; border-bottom: 1px solid #eee; position:sticky; top:0; z-index:100; padding: 15px 0; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; }
+    .brand { font-weight:900; color:var(--brand); font-size: 20px; letter-spacing: -0.5px; }
     
-    .portfolio-table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 40px 0; }
-    .portfolio-table th, .portfolio-table td { padding: 12px 8px; border-bottom: 1px solid #e5e5e5; text-align: center; }
-    .portfolio-table th { background-color: var(--bg); font-weight: 700; }
-    .portfolio-table td.title { text-align: left; }
-    .portfolio-table td.title a:hover { text-decoration: underline; color: var(--brand); }
-    .portfolio-table tbody tr:hover { background-color: var(--brand-light); }
+    nav ul { display: flex; list-style: none; gap: 10px; margin: 0; padding: 0; }
+    nav a {
+      font-weight: 700;
+      padding: 10px 18px;
+      background: var(--brand-light);
+      color: var(--brand);
+      border-radius: 8px;
+      display: block;
+      font-size: 14px;
+    }
+    nav a[aria-current="page"] { background: var(--brand); color: #fff; }
+    nav a:hover { background: #dceae4; }
 
-    .footer-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 50px; margin-bottom: 50px; }
-    .footer-buttons a { flex: 1 1 180px; max-width: 240px; padding: 14px 20px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 15px; }
-    .call { background:var(--accent); color:#fff }
-    .pc { background: #e0e0e0; color:#333; }
-    .blog { background:var(--brand); color:#fff; }
+    /* Page Header */
+    .page-header { background: linear-gradient(135deg, #1d774b, #3bb98f); padding: 50px 0; text-align: center; color: white; }
+    .page-header h1 { margin: 0; font-size: 32px; font-weight: 900; }
+    .page-header p { margin-top: 10px; opacity: 0.9; font-size: 18px; }
+    
+    /* Portfolio Table */
+    .portfolio-section { padding: 50px 0; background: var(--bg); min-height: 500px; }
+    .portfolio-table { 
+      width: 100%; 
+      border-collapse: separate; 
+      border-spacing: 0; 
+      background: white; 
+      border-radius: var(--radius); 
+      overflow: hidden; 
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+    .portfolio-table th { background-color: #f8fcf9; padding: 18px; font-weight: 700; border-bottom: 2px solid var(--brand); color: #333; }
+    .portfolio-table td { padding: 18px; border-bottom: 1px solid #eee; text-align: center; }
+    .portfolio-table td.title { text-align: left; font-weight: 500; font-size: 16px; }
+    .portfolio-table td.title a:hover { color: var(--brand); text-decoration: underline; }
+    .portfolio-table tbody tr:last-child td { border-bottom: none; }
+    .portfolio-table tbody tr:hover { background-color: #fafafa; }
 
-    footer { background:#1a2e25; color:#e1e8e5; padding:30px 0; }
-    .footer-inner { text-align: center; font-size: 14px; line-height: 1.6;}
-  </style>
+    /* Footer Buttons */
+    .footer-buttons { display: flex; justify-content: center; gap: 15px; margin: 50px 0; }
+    .footer-buttons a { width: 260px; padding: 18px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .call { background:var(--accent); color:#fff; }
+    .blog { background:var(--brand); color:#fff; }
+    .pc { background: #555; color:#fff; }
+
+    footer { background:#1a2e25; color:#e1e8e5; padding:40px 0; }
+    .footer-inner { text-align: center; font-size: 14px; opacity: 0.8; line-height: 1.8; }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container topbar">
-      <div class="brand">하수구·싱크대·변기막힘뚫음 | 고압세척·배관내시경</div>
-      <nav>
-        <ul>
-          <li><a href="pc.html">홈</a></li>
-          <li><a href="pc-hasoogoo.html">하수구·변기 뚫음</a></li>
-          <li><a href="pc-pressure.html">고압세척/관로탐지</a></li>
-          <li><a href="pc-camera.html">배관내시경</a></li>
+  <header>
+    <div class="container topbar">
+      <div class="brand">하수구·싱크대·변기막힘뚫음 | 고압세척·배관내시경</div>
+      <nav>
+        <ul>
+          <li><a href="pc.html">홈</a></li>
+          <li><a href="pc-hasoogoo.html">하수구·변기 뚫음</a></li>
+          <li><a href="pc-pressure.html">고압세척/관로탐지</a></li>
+          <li><a href="pc-camera.html">배관내시경</a></li>
           <li><a href="pc-portfolio.html" aria-current="page">시공 사례</a></li>
-          <li><a href="pc-contact.html">문의</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+          <li><a href="pc-contact.html">문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <main class="container">
-    <div class="hero">
-      <h1>든든설비 시공 사례</h1>
-    </div>
-    <table class="portfolio-table">
-      <thead>
-        <tr>
-          <th style="width:10%;">번호</th>
-          <th>제목</th>
-          <th style="width:20%;">작성일</th>
-        </tr>
-      </thead>
-      <tbody id="portfolio-list"></tbody>
-    </table>
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>든든설비 시공 사례</h1>
+        <p>군산 전 지역 하수구·변기·싱크대 막힘 해결 기록</p>
+      </div>
+    </div>
 
-    <div class="footer-buttons">
-      <a class="call" href="tel:0507-1427-4480">📞 긴급직통전화 상담</a>
-      <a class="blog" href="https://blog.naver.com/hasoogoo598_" target="_blank">📘 공식 블로그 바로가기</a>
-      <a class="pc" href="index.html">📱 모바일 버전으로 보기</a>
-    </div>
-  </main>
+    <section class="portfolio-section">
+      <div class="container">
+        <table class="portfolio-table">
+          <thead>
+            <tr>
+              <th style="width:100px;">번호</th>
+              <th>제목</th>
+              <th style="width:180px;">작성일</th>
+            </tr>
+          </thead>
+          <tbody id="portfolio-list">
+            </tbody>
+        </table>
 
-  <footer>
-    <div class="container footer-inner">
-      <div>
-        <strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체<br />
-        <strong>대표번호 :</strong> 0507-1427-4480<br />
-        Copyright(C)2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.
-      </div>
-    </div>
-  </footer>
+        <div class="footer-buttons">
+          <a class="call" href="tel:0507-1427-4480">📞 긴급직통전화 상담</a>
+          <a class="blog" href="https://blog.naver.com/hasoogoo598_" target="_blank">📘 공식 블로그 바로가기</a>
+          <a class="pc" href="portfolio.html">📱 모바일 버전으로 보기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체 (든든설비)<br />
+      <strong>대표번호 :</strong> 0507-1427-4480 | <strong>지역 :</strong> 군산시 전역 출장 가능<br />
+      Copyright(C) 2025 든든설비 All rights reserved.
+    </div>
+  </footer>
+
   <script>
-    const fixedPosts = [
-      {
-        title: "군산 싱크대 냄새 예방: 하수구·변기까지 확인하는 사전 신호 3가지",
-        link: "250902-deundeun-gunsan-sink-trap-guide.html",
-        date: "2025.09.02"
-      }
-    ];
+    // 1. 수동 추가 데이터 (모바일 버전에서 가져온 최신 사례)
+    const fixedPosts = [
+      {
+        title: "[군산 하수구] 수송동 변기 속 휴지걸이 봉, 석션으로 이물까지 확인한 든든설비",
+        link: "251230-susong-toilet-suction.html",
+        date: "2025.12.30"
+      },
+      {
+        title: "[군산 나운동 변기 막힘] 음식물(미나리) 원인 회수·이중 테스트 복구 – 든든설비",
+        link: "251107-deundeun-naun-dong-toilet-minari-clog.html",
+        date: "2025.11.07"
+      },
+      {
+        title: "[군산 설비 문제 예방] 연휴 전 꼭 점검해야 할 3가지 포인트",
+        link: "gunsan-plumbing-holiday-checklist.html",
+        date: "2025.10.04"
+      },
+      {
+        title: "군산 싱크대 냄새 예방: 하수구·변기까지 확인하는 사전 신호 3가지",
+        link: "250902-deundeun-gunsan-sink-trap-guide.html",
+        date: "2025.09.02"
+      }
+    ];
 
-    async function loadPosts() {
-      const rssUrl = "https://rss.blog.naver.com/hasoogoo598_.xml";
-      let dynamicPosts = [];
+    function renderTable(posts) {
+      const tbody = document.getElementById("portfolio-list");
+      let html = "";
+      posts.forEach((p, idx) => {
+        const no = posts.length - idx;
+        html += `
+          <tr>
+            <td>${no}</td>
+            <td class="title"><a href="${p.link}">${p.title}</a></td>
+            <td>${p.date}</td>
+          </tr>
+        `;
+      });
+      tbody.innerHTML = html;
+    }
 
-      try {
-        const response = await fetch(rssUrl);
-        const text = await response.text();
+    // 2. 실시간 블로그 글 가져오기 (CORS 우회 프록시 사용)
+    async function loadLatestPosts() {
+      // 우선 수동 데이터로 화면을 그립니다.
+      renderTable(fixedPosts);
 
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(text, "application/xml");
-        const items = xml.querySelectorAll("item");
+      try {
+        const rssUrl = encodeURIComponent("https://rss.blog.naver.com/hasoogoo598_.xml");
+        const response = await fetch(`https://api.allorigins.win/get?url=${rssUrl}`);
+        const data = await response.json();
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(data.contents, "application/xml");
+        const items = xml.querySelectorAll("item");
 
-        items.forEach(item => {
-          const title = item.querySelector("title").textContent;
-          const link = item.querySelector("link").textContent;
-          const pubDate = new Date(item.querySelector("pubDate").textContent);
-          const dateStr = pubDate.toISOString().split("T")[0].replace(/-/g, ".");
+        if (items.length > 0) {
+          const dynamicPosts = Array.from(items).map(item => ({
+            title: item.querySelector("title").textContent,
+            link: item.querySelector("link").textContent,
+            date: new Date(item.querySelector("pubDate").textContent).toISOString().split("T")[0].replace(/-/g, ".")
+          }));
 
-          dynamicPosts.push({ title, link, date: dateStr });
-        });
-      } catch (e) {
-        console.error("RSS 불러오기 실패", e);
-      }
+          // 수동 데이터와 블로그 최신 데이터를 합쳐서 중복 제거 후 날짜순 정렬 (선택 사항)
+          // 여기서는 최신 블로그 글을 상단에 보여주도록 구성할 수 있습니다.
+          // renderTable(dynamicPosts); // 블로그 글만 보여줄 경우 이 줄 활성화
+        }
+      } catch (e) {
+        console.log("실시간 연동 실패 시 기본 데이터를 유지합니다.");
+      }
+    }
 
-      const allPosts = [...dynamicPosts, ...fixedPosts];
-
-      allPosts.forEach((p, idx) => {
-        p.no = allPosts.length - idx;
-      });
-
-      let html = "";
-      allPosts.forEach(p => {
-        html += `
-          <tr>
-            <td>${p.no}</td>
-            <td class="title"><a href="${p.link}" target="_blank">${p.title}</a></td>
-            <td>${p.date}</td>
-          </tr>
-        `;
-      });
-
-      document.getElementById("portfolio-list").innerHTML = html;
-    }
-
-    document.addEventListener("DOMContentLoaded", loadPosts);
-  </script>
+    document.addEventListener("DOMContentLoaded", loadLatestPosts);
+  </script>
 </body>
 </html>
