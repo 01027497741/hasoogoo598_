@@ -2,82 +2,75 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index, follow" />
-  <meta name="viewport" content="width=1200" />
+  
   <title>시공 사례 (PC버전) | 든든설비</title>
+  <meta name="description" content="군산 하수구 막힘, 군산 하수구 뚫기, 군산 하수도 막힘, 군산 배수구 막힘, 군산 하수도, 군산 배수구 청소, 군산 고압세척, 군산 변기 막힘, 군산 싱크대 배수 막힘, 군산 배관 내시경, 군산 맨홀, 군산 배관 전문" />
+  <meta property="og:description" content="군산 하수구·변기·싱크대 막힘, 고압세척과 배관 내시경으로 신속하고 정확하게 해결합니다. 경력과 장비를 갖춘 믿을 수 있는 군산 배관 전문 서비스입니다." />
+  <meta property="og:image" content="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/images/sink-unclog-complete.jpg" />
+  <meta property="og:title" content="시공 사례 | 든든설비" />
+  <meta property="og:url" content="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/pc-portfolio.html" />
+  <meta property="og:type" content="website" />
+
   <style>
     :root {
-      /* 남색 컨셉으로 색상 재설정 */
-      --brand: #0a57a4; 
-      --brand-light: #eef6ff; 
-      --brand-dark: #0b2942;
-      --accent: #fe3b2f; 
-      --ink: #0a1a2b; 
-      --bg: #f6f9ff; 
-      --radius: 12px;
-      --maxw: 1120px;
+      --brand: #0a57a4; --brand-2: #0e84e5; --brand-dark: #0b2338; --brand-light: #eef6ff; 
+      --accent: #fe3b2f; --ink: #0a1a2b; --bg: #f6f9ff; --radius: 16px;
+      --shadow: 0 8px 24px rgba(0,0,0,.08); --maxw: 1120px;
     }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family:'Noto Sans KR', sans-serif; background:#fff; color:var(--ink); line-height:1.65; }
-    a { color:inherit; text-decoration:none; transition: 0.2s; }
-    .container { max-width:var(--maxw); margin:0 auto; padding:0 20px; }
+    * { box-sizing: border-box }
+    body { margin: 0; font-family: -apple-system, sans-serif; color: var(--ink); background: #fff; line-height: 1.65; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none }
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px }
 
-    /* 메뉴 한 줄 고정 헤더 - 남색 테마 */
-    header { background:#fff; border-bottom: 1px solid #e2edf9; position:sticky; top:0; z-index:100; padding: 12px 0; }
-    .topbar { display:flex; justify-content:space-between; align-items:center; gap: 15px; }
-    .brand { font-weight: 900; color: #103a61; font-size: 18px; letter-spacing: -1px; flex-shrink: 0; white-space: nowrap; }
-    
-    nav { flex-shrink: 0; }
-    nav ul { display: flex; list-style: none; gap: 6px; margin: 0; padding: 0; align-items: center; }
-    nav a { 
-      font-weight: 700; 
-      padding: 10px 14px; 
-      background: var(--brand-light); 
-      color: var(--ink); 
-      border-radius: 10px; 
-      display: block; 
-      font-size: 14px; 
-      white-space: nowrap; 
-    }
+    /* 헤더 - 탭 메뉴 정중앙 정렬 (모바일 대응) */
+    header { background: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 0 rgba(0,0,0,.06); padding: 12px 0; }
+    .topbar-inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+    .brand { font-weight: 900; color: #132f4a; font-size: clamp(16px, 4vw, 18px); word-break: keep-all; }
+    nav ul { display: flex; list-style: none; gap: 6px; margin: 0; padding: 0; justify-content: center; flex-wrap: wrap; }
+    nav a { display: inline-flex; align-items: center; padding: 8px 12px; border-radius: 10px; font-weight: 700; background: var(--brand-light); font-size: 13px; white-space: nowrap; }
     nav a[aria-current="page"] { background: var(--brand); color: #fff; }
-    nav a:hover { background: #d6ebff; }
 
-    /* 페이지 헤더 - 남색 그라데이션 */
-    .page-header { background: linear-gradient(180deg, #d7eeff 0%, #ffffff 100%); padding: 55px 0; text-align: center; color: var(--ink); border-bottom: 1px solid #e2edf9; }
-    .page-header h1 { margin: 0; font-size: 32px; font-weight: 900; color: #103a61; }
-    
-    /* 시공 사례 섹션 */
-    .portfolio-section { padding: 50px 0; background: var(--bg); min-height: 500px; }
-    .portfolio-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: var(--radius); overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
-    .portfolio-table th { background-color: #eef6ff; padding: 20px 15px; font-weight: 700; border-bottom: 2px solid var(--brand); color: #103a61; }
-    .portfolio-table td { padding: 18px 15px; border-bottom: 1px solid #e2edf9; text-align: center; }
-    .portfolio-table td.title { text-align: left; font-weight: 500; font-size: 16px; }
+    /* 페이지 헤더 */
+    .page-header { background: linear-gradient(180deg, #cfeeff 0%, #ffffff 100%); padding: 50px 0; text-align: center; border-bottom: 1px solid #e2edf9; }
+    .page-header h1 { font-size: clamp(24px, 5vw, 32px); font-weight: 900; color: #103a61; margin: 0; }
+    .page-header p { margin-top: 10px; color: #334b66; font-size: 15px; }
+
+    /* 시공 사례 섹션 - 테이블 반응형 보정 */
+    .portfolio-section { padding: 40px 0; background: var(--bg); min-height: 500px; }
+    .table-wrap { overflow-x: auto; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); }
+    .portfolio-table { width: 100%; border-collapse: collapse; min-width: 600px; }
+    .portfolio-table th { background-color: #eef6ff; padding: 18px 10px; font-weight: 700; border-bottom: 2px solid var(--brand); color: #103a61; font-size: 14px; }
+    .portfolio-table td { padding: 15px 10px; border-bottom: 1px solid #e2edf9; text-align: center; font-size: 14px; }
+    .portfolio-table td.title { text-align: left; font-weight: 500; color: #333; }
     .portfolio-table td.title a:hover { color: var(--brand); text-decoration: underline; }
 
-    /* 하단 버튼들 */
-    .footer-buttons { display: flex; justify-content: center; gap: 15px; margin: 50px 0; }
-    .footer-buttons a { width: 260px; padding: 18px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-    .call { background:var(--accent); color:#fff; }
-    .blog { background: #0e84e5; color:#fff; } /* 블로그 버튼 남색 계열 */
-    .pc { background: #e8f2ff; color:#0f2b46; border:1px solid #c9dff9; }
+    /* 하단 버튼 3형제 - 반응형 정렬 */
+    .footer-buttons { display: flex; justify-content: center; gap: 10px; margin: 50px 0; flex-wrap: wrap; }
+    .footer-buttons a { flex: 1 1 200px; max-width: 280px; padding: 16px; border-radius: 12px; font-weight: 800; font-size: 15px; text-align: center; transition: 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .footer-buttons a:hover { transform: translateY(-3px); }
+    .call { background: var(--accent); color: #fff; }
+    .blog { background: var(--brand-2); color: #fff; }
+    .pc { background: #e9f2fb; color: #0b2338; border: 1px solid #dce9fb; }
 
-    /* 🚩 원래대로 복구한 남색 풋터 스타일 */
-    footer { background: var(--brand-dark); color: #d9e7f7; padding: 35px 0; }
-    .footer-inner { text-align: center; font-size: 14px; line-height: 1.8; }
+    /* 🚩 통일된 남색 3줄 풋터 */
+    footer { background: var(--brand-dark); color: #d9e7f7; padding: 40px 0; text-align: center; font-size: 14px; line-height: 1.8; }
+    footer strong { color: #fff; }
   </style>
 </head>
 <body>
   <header>
-    <div class="container topbar">
+    <div class="container topbar-inner">
       <div class="brand">하수구·싱크대·변기막힘뚫음 | 고압세척·배관내시경</div>
       <nav>
         <ul>
-          <li><a href="pc.html">홈</a></li>
-          <li><a href="pc-hasoogoo.html">하수구·변기 뚫음</a></li>
-          <li><a href="pc-pressure.html">고압세척/관로탐지</a></li>
-          <li><a href="pc-camera.html">배관내시경</a></li>
-          <li><a href="pc-portfolio.html" aria-current="page">시공 사례</a></li>
-          <li><a href="pc-contact.html">문의</a></li>
+          <li><a href="./pc.html">홈</a></li>
+          <li><a href="./pc-hasoogoo.html">하수구·변기 뚫음</a></li>
+          <li><a href="./pc-pressure.html">고압세척/관로탐지</a></li>
+          <li><a href="./pc-camera.html">배관내시경</a></li>
+          <li><a href="./pc-portfolio.html" aria-current="page">시공 사례</a></li>
+          <li><a href="./pc-contact.html">문의</a></li>
         </ul>
       </nav>
     </div>
@@ -87,40 +80,39 @@
     <div class="page-header">
       <div class="container">
         <h1>든든설비 시공 사례</h1>
-        <p style="margin-top:10px; color:var(--muted);">군산 전 지역의 생생한 현장 기록을 확인하세요.</p>
+        <p>군산 전 지역의 생생한 현장 기록을 확인하세요.</p>
       </div>
     </div>
 
     <section class="portfolio-section">
       <div class="container">
-        <table class="portfolio-table">
-          <thead>
-            <tr>
-              <th style="width:80px;">번호</th>
-              <th>시공 현장 및 제목</th>
-              <th style="width:180px;">작성일</th>
-            </tr>
-          </thead>
-          <tbody id="portfolio-list">
-            </tbody>
-        </table>
+        <div class="table-wrap">
+          <table class="portfolio-table">
+            <thead>
+              <tr>
+                <th style="width:60px;">번호</th>
+                <th>시공 현장 및 제목</th>
+                <th style="width:120px;">작성일</th>
+              </tr>
+            </thead>
+            <tbody id="portfolio-list"></tbody>
+          </table>
+        </div>
 
         <div class="footer-buttons">
-          <a class="call" href="tel:0507-1427-4480">📞 긴급직통전화 상담</a>
-          <a class="blog" href="https://blog.naver.com/hasoogoo598_" target="_blank">📘 공식 블로그 바로가기</a>
-          <a class="pc" href="pc.html">🏠 PC 메인으로</a>
+          <a class="call" href="tel:0507-1427-4480">📞 긴급상담</a>
+          <a class="blog" href="https://blog.naver.com/hasoogoo598_" target="_blank">📘 공식 블로그</a>
+          <a class="pc" href="./pc.html">🏠 PC 메인</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+    <footer>
     <div class="container footer-inner">
-      <div>
-        <strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체<br />
-        <strong>대표번호 :</strong> 0507-1427-4480<br />
-        Copyright(C)2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.
-      </div>
+      <div><strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체</div>
+      <div><strong>대표번호 :</strong> 0507-1427-4480</div>
+      <div>Copyright(C)2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.</div>
     </div>
   </footer>
 
