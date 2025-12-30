@@ -86,4 +86,11 @@
     <changefreq>monthly</changefreq>
   </url>
 
+  <!-- ✅ 추가: 251230 수송동 변기 석션 사례 -->
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/251230-susong-toilet-suction.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
