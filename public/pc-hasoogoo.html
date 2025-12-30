@@ -23,7 +23,6 @@
 
     header { background:#fff; box-shadow:0 1px 0 rgba(0,0,0,.06); position:sticky; top:0; z-index:100 }
     
-    /* 헤더 탭 메뉴 정중앙 정렬 */
     .topbar { 
       display:flex; 
       flex-direction: column; 
@@ -63,14 +62,11 @@
 
     h2 { font-size:20px; margin-top: 50px; margin-bottom: 20px;} 
     h3 { font-size: 18px; color: var(--brand); border-bottom: 2px solid #eef6ff; padding-bottom: 8px; margin-top:0; } 
-    ol { padding-left:20px; margin-top: 16px; } 
-    li { margin-bottom:12px; padding-left: 4px; } 
     .panel { background:#f7fbff; border:1px solid #e2edf9; padding:24px; border-radius:14px; margin-bottom: 20px; text-align: left; } 
 
     .image-wrap { margin:30px 0; text-align:center }
     .image-wrap img { max-width:100%; border-radius:16px; box-shadow:var(--shadow) }
     
-    /* 하단 버튼 영역 */
     .footer-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 50px 0; }
     .footer-buttons a { flex: 1 1 180px; max-width: 240px; padding: 14px 20px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 15px; transition: transform 0.2s; }
     .footer-buttons a:hover { transform: translateY(-3px); }
@@ -78,9 +74,8 @@
     .pc { background:#e8f2ff; color:#0f2b46; border:1px solid #c9dff9 }
     .blog { background:var(--brand-2); color:#fff; }
 
-    /* 🚩 다른 페이지와 일치시킨 남색 풋터 스타일 */
-    footer { background: var(--brand-dark); color:#d9e7f7; padding:40px 0; margin-top:0; text-align: center; }
-    .footer-inner { font-size: 13px; line-height: 1.8; }
+    /* 🚩 띨띨함 탈출! 풋터 글씨 크기를 14px로 똑딱 조절 */
+    footer { background: var(--brand-dark); color:#d9e7f7; padding:40px 0; margin-top:0; text-align: center; font-size: 14px; line-height: 1.8; }
     footer strong { color: #fff; }
   </style>
 </head>
@@ -158,13 +153,12 @@
     </div>
   </main>
 
-  <footer>
-    <div class="container">
-      <strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체<br />
-      <strong>대표번호 :</strong> 0507-1427-4480<br />
-      Copyright(C) 2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.
+   <footer>
+    <div class="container footer-inner">
+      <div><strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체</div>
+      <div><strong>대표번호 :</strong> 0507-1427-4480</div>
+      <div>Copyright(C)2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.</div>
     </div>
   </footer>
 </body>
 </html>
-
