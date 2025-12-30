@@ -14,38 +14,67 @@
       --ink: #222222; 
       --bg: #f7f9f8; 
       --radius: 12px;
-      --maxw: 1100px;
+      --maxw: 1120px;
     }
     * { box-sizing: border-box; }
     body { margin:0; font-family:'Noto Sans KR', sans-serif; background:#fff; color:var(--ink); line-height:1.65; }
     a { color:inherit; text-decoration:none; transition: 0.2s; }
     .container { max-width:var(--maxw); margin:0 auto; padding:0 20px; }
 
-    /* Header & Navigation */
-    header { background:#fff; border-bottom: 1px solid #eee; position:sticky; top:0; z-index:100; padding: 15px 0; }
-    .topbar { display:flex; justify-content:space-between; align-items:center; }
-    .brand { font-weight:900; color:var(--brand); font-size: 20px; letter-spacing: -0.5px; }
+    /* Header & Navigation - 한 줄 고정 핵심 설정 */
+    header { 
+      background:#fff; 
+      border-bottom: 1px solid #eee; 
+      position:sticky; 
+      top:0; 
+      z-index:100; 
+      padding: 12px 0; 
+    }
+    .topbar { 
+      display:flex; 
+      justify-content:space-between; 
+      align-items:center; 
+      gap: 15px; 
+    }
+    .brand { 
+      font-weight: 900; 
+      color: var(--brand); 
+      font-size: 18px; 
+      letter-spacing: -1px;
+      flex-shrink: 0; /* 로고 영역 고정 */
+      white-space: nowrap;
+    }
     
-    nav ul { display: flex; list-style: none; gap: 10px; margin: 0; padding: 0; }
+    nav { flex-shrink: 0; } /* 메뉴 영역이 줄어들지 않게 설정 */
+    nav ul { 
+      display: flex; 
+      list-style: none; 
+      gap: 6px; 
+      margin: 0; 
+      padding: 0; 
+      align-items: center;
+    }
     nav a {
       font-weight: 700;
-      padding: 10px 18px;
+      padding: 10px 14px; 
       background: var(--brand-light);
       color: var(--brand);
       border-radius: 8px;
       display: block;
       font-size: 14px;
+      white-space: nowrap; /* ★ 글자 줄바꿈 절대 방지 */
+      transition: 0.2s;
     }
     nav a[aria-current="page"] { background: var(--brand); color: #fff; }
     nav a:hover { background: #dceae4; }
 
     /* Page Header */
-    .page-header { background: linear-gradient(135deg, #1d774b, #3bb98f); padding: 50px 0; text-align: center; color: white; }
+    .page-header { background: linear-gradient(135deg, #1d774b, #3bb98f); padding: 55px 0; text-align: center; color: white; }
     .page-header h1 { margin: 0; font-size: 32px; font-weight: 900; }
-    .page-header p { margin-top: 10px; opacity: 0.9; font-size: 18px; }
+    .page-header p { margin-top: 10px; opacity: 0.9; font-size: 17px; }
     
     /* Portfolio Table */
-    .portfolio-section { padding: 50px 0; background: var(--bg); min-height: 500px; }
+    .portfolio-section { padding: 50px 0; background: var(--bg); min-height: 600px; }
     .portfolio-table { 
       width: 100%; 
       border-collapse: separate; 
@@ -53,18 +82,18 @@
       background: white; 
       border-radius: var(--radius); 
       overflow: hidden; 
-      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
     }
-    .portfolio-table th { background-color: #f8fcf9; padding: 18px; font-weight: 700; border-bottom: 2px solid var(--brand); color: #333; }
-    .portfolio-table td { padding: 18px; border-bottom: 1px solid #eee; text-align: center; }
+    .portfolio-table th { background-color: #f8fcf9; padding: 20px 15px; font-weight: 700; border-bottom: 2px solid var(--brand); color: #333; }
+    .portfolio-table td { padding: 18px 15px; border-bottom: 1px solid #eee; text-align: center; }
     .portfolio-table td.title { text-align: left; font-weight: 500; font-size: 16px; }
     .portfolio-table td.title a:hover { color: var(--brand); text-decoration: underline; }
-    .portfolio-table tbody tr:last-child td { border-bottom: none; }
-    .portfolio-table tbody tr:hover { background-color: #fafafa; }
+    .portfolio-table tbody tr:hover { background-color: #fcfdfc; }
 
     /* Footer Buttons */
     .footer-buttons { display: flex; justify-content: center; gap: 15px; margin: 50px 0; }
-    .footer-buttons a { width: 260px; padding: 18px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .footer-buttons a { width: 260px; padding: 18px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.2s; }
+    .footer-buttons a:hover { transform: translateY(-3px); }
     .call { background:var(--accent); color:#fff; }
     .blog { background:var(--brand); color:#fff; }
     .pc { background: #555; color:#fff; }
@@ -94,7 +123,7 @@
     <div class="page-header">
       <div class="container">
         <h1>든든설비 시공 사례</h1>
-        <p>군산 전 지역 하수구·변기·싱크대 막힘 해결 기록</p>
+        <p>직접 발로 뛰며 해결한 군산 현장의 생생한 기록입니다.</p>
       </div>
     </div>
 
@@ -103,8 +132,8 @@
         <table class="portfolio-table">
           <thead>
             <tr>
-              <th style="width:100px;">번호</th>
-              <th>제목</th>
+              <th style="width:80px;">번호</th>
+              <th>시공 현장 및 제목</th>
               <th style="width:180px;">작성일</th>
             </tr>
           </thead>
@@ -124,82 +153,32 @@
   <footer>
     <div class="container footer-inner">
       <strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체 (든든설비)<br />
-      <strong>대표번호 :</strong> 0507-1427-4480 | <strong>지역 :</strong> 군산시 전역 출장 가능<br />
+      <strong>대표번호 :</strong> 0507-1427-4480 | <strong>지역 :</strong> 군산시 전북특별자치도 전역 출장<br />
       Copyright(C) 2025 든든설비 All rights reserved.
     </div>
   </footer>
 
   <script>
-    // 1. 수동 추가 데이터 (모바일 버전에서 가져온 최신 사례)
-    const fixedPosts = [
-      {
-        title: "[군산 하수구] 수송동 변기 속 휴지걸이 봉, 석션으로 이물까지 확인한 든든설비",
-        link: "251230-susong-toilet-suction.html",
-        date: "2025.12.30"
-      },
-      {
-        title: "[군산 나운동 변기 막힘] 음식물(미나리) 원인 회수·이중 테스트 복구 – 든든설비",
-        link: "251107-deundeun-naun-dong-toilet-minari-clog.html",
-        date: "2025.11.07"
-      },
-      {
-        title: "[군산 설비 문제 예방] 연휴 전 꼭 점검해야 할 3가지 포인트",
-        link: "gunsan-plumbing-holiday-checklist.html",
-        date: "2025.10.04"
-      },
-      {
-        title: "군산 싱크대 냄새 예방: 하수구·변기까지 확인하는 사전 신호 3가지",
-        link: "250902-deundeun-gunsan-sink-trap-guide.html",
-        date: "2025.09.02"
-      }
+    // 최신 시공 사례 리스트
+    const posts = [
+      { no: 4, title: "[군산 하수구] 수송동 변기 속 휴지걸이 봉, 석션으로 이물까지 확인한 든든설비", link: "251230-susong-toilet-suction.html", date: "2025.12.30" },
+      { no: 3, title: "[군산 나운동 변기 막힘] 음식물(미나리) 원인 회수·이중 테스트 복구 – 든든설비", link: "251107-deundeun-naun-dong-toilet-minari-clog.html", date: "2025.11.07" },
+      { no: 2, title: "[군산 설비 문제 예방] 연휴 전 꼭 점검해야 할 3가지 포인트", link: "gunsan-plumbing-holiday-checklist.html", date: "2025.10.04" },
+      { no: 1, title: "군산 싱크대 냄새 예방: 하수구·변기까지 확인하는 사전 신호 3가지", link: "250902-deundeun-gunsan-sink-trap-guide.html", date: "2025.09.02" }
     ];
 
-    function renderTable(posts) {
-      const tbody = document.getElementById("portfolio-list");
-      let html = "";
-      posts.forEach((p, idx) => {
-        const no = posts.length - idx;
-        html += `
-          <tr>
-            <td>${no}</td>
-            <td class="title"><a href="${p.link}">${p.title}</a></td>
-            <td>${p.date}</td>
-          </tr>
-        `;
-      });
-      tbody.innerHTML = html;
+    function render() {
+      const html = posts.map(p => `
+        <tr>
+          <td>${p.no}</td>
+          <td class="title"><a href="${p.link}">${p.title}</a></td>
+          <td>${p.date}</td>
+        </tr>
+      `).join('');
+      document.getElementById("portfolio-list").innerHTML = html;
     }
 
-    // 2. 실시간 블로그 글 가져오기 (CORS 우회 프록시 사용)
-    async function loadLatestPosts() {
-      // 우선 수동 데이터로 화면을 그립니다.
-      renderTable(fixedPosts);
-
-      try {
-        const rssUrl = encodeURIComponent("https://rss.blog.naver.com/hasoogoo598_.xml");
-        const response = await fetch(`https://api.allorigins.win/get?url=${rssUrl}`);
-        const data = await response.json();
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(data.contents, "application/xml");
-        const items = xml.querySelectorAll("item");
-
-        if (items.length > 0) {
-          const dynamicPosts = Array.from(items).map(item => ({
-            title: item.querySelector("title").textContent,
-            link: item.querySelector("link").textContent,
-            date: new Date(item.querySelector("pubDate").textContent).toISOString().split("T")[0].replace(/-/g, ".")
-          }));
-
-          // 수동 데이터와 블로그 최신 데이터를 합쳐서 중복 제거 후 날짜순 정렬 (선택 사항)
-          // 여기서는 최신 블로그 글을 상단에 보여주도록 구성할 수 있습니다.
-          // renderTable(dynamicPosts); // 블로그 글만 보여줄 경우 이 줄 활성화
-        }
-      } catch (e) {
-        console.log("실시간 연동 실패 시 기본 데이터를 유지합니다.");
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", loadLatestPosts);
+    document.addEventListener("DOMContentLoaded", render);
   </script>
 </body>
 </html>
