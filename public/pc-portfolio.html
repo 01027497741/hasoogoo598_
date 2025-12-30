@@ -5,7 +5,6 @@
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=1200" />
   <title>시공 사례 (PC버전) | 든든설비</title>
-  <meta name="description" content="군산 든든설비의 최신 하수구, 변기, 싱크대 막힘 해결 시공 사례를 확인하세요." />
   <style>
     :root {
       --brand: #1d774b; 
@@ -21,85 +20,33 @@
     a { color:inherit; text-decoration:none; transition: 0.2s; }
     .container { max-width:var(--maxw); margin:0 auto; padding:0 20px; }
 
-    /* Header & Navigation - 한 줄 고정 핵심 설정 */
-    header { 
-      background:#fff; 
-      border-bottom: 1px solid #eee; 
-      position:sticky; 
-      top:0; 
-      z-index:100; 
-      padding: 12px 0; 
-    }
-    .topbar { 
-      display:flex; 
-      justify-content:space-between; 
-      align-items:center; 
-      gap: 15px; 
-    }
-    .brand { 
-      font-weight: 900; 
-      color: var(--brand); 
-      font-size: 18px; 
-      letter-spacing: -1px;
-      flex-shrink: 0; /* 로고 영역 고정 */
-      white-space: nowrap;
-    }
-    
-    nav { flex-shrink: 0; } /* 메뉴 영역이 줄어들지 않게 설정 */
-    nav ul { 
-      display: flex; 
-      list-style: none; 
-      gap: 6px; 
-      margin: 0; 
-      padding: 0; 
-      align-items: center;
-    }
-    nav a {
-      font-weight: 700;
-      padding: 10px 14px; 
-      background: var(--brand-light);
-      color: var(--brand);
-      border-radius: 8px;
-      display: block;
-      font-size: 14px;
-      white-space: nowrap; /* ★ 글자 줄바꿈 절대 방지 */
-      transition: 0.2s;
-    }
+    /* 메뉴 한 줄 고정 헤더 */
+    header { background:#fff; border-bottom: 1px solid #eee; position:sticky; top:0; z-index:100; padding: 12px 0; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; gap: 15px; }
+    .brand { font-weight: 900; color: var(--brand); font-size: 18px; letter-spacing: -1px; flex-shrink: 0; white-space: nowrap; }
+    nav { flex-shrink: 0; }
+    nav ul { display: flex; list-style: none; gap: 6px; margin: 0; padding: 0; align-items: center; }
+    nav a { font-weight: 700; padding: 10px 14px; background: var(--brand-light); color: var(--brand); border-radius: 8px; display: block; font-size: 14px; white-space: nowrap; }
     nav a[aria-current="page"] { background: var(--brand); color: #fff; }
-    nav a:hover { background: #dceae4; }
 
-    /* Page Header */
     .page-header { background: linear-gradient(135deg, #1d774b, #3bb98f); padding: 55px 0; text-align: center; color: white; }
     .page-header h1 { margin: 0; font-size: 32px; font-weight: 900; }
-    .page-header p { margin-top: 10px; opacity: 0.9; font-size: 17px; }
     
-    /* Portfolio Table */
-    .portfolio-section { padding: 50px 0; background: var(--bg); min-height: 600px; }
-    .portfolio-table { 
-      width: 100%; 
-      border-collapse: separate; 
-      border-spacing: 0; 
-      background: white; 
-      border-radius: var(--radius); 
-      overflow: hidden; 
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    }
+    .portfolio-section { padding: 50px 0; background: var(--bg); min-height: 500px; }
+    .portfolio-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
     .portfolio-table th { background-color: #f8fcf9; padding: 20px 15px; font-weight: 700; border-bottom: 2px solid var(--brand); color: #333; }
     .portfolio-table td { padding: 18px 15px; border-bottom: 1px solid #eee; text-align: center; }
     .portfolio-table td.title { text-align: left; font-weight: 500; font-size: 16px; }
-    .portfolio-table td.title a:hover { color: var(--brand); text-decoration: underline; }
-    .portfolio-table tbody tr:hover { background-color: #fcfdfc; }
 
-    /* Footer Buttons */
     .footer-buttons { display: flex; justify-content: center; gap: 15px; margin: 50px 0; }
-    .footer-buttons a { width: 260px; padding: 18px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.2s; }
-    .footer-buttons a:hover { transform: translateY(-3px); }
+    .footer-buttons a { width: 260px; padding: 18px; font-weight: 800; text-align: center; border-radius: 12px; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
     .call { background:var(--accent); color:#fff; }
     .blog { background:var(--brand); color:#fff; }
     .pc { background: #555; color:#fff; }
 
-    footer { background:#1a2e25; color:#e1e8e5; padding:40px 0; }
-    .footer-inner { text-align: center; font-size: 14px; opacity: 0.8; line-height: 1.8; }
+    /* 🚩 원래대로 복구한 풋터 스타일 */
+    footer { background:#1a2e25; color:#e1e8e5; padding:30px 0; }
+    .footer-inner { text-align: center; font-size: 14px; line-height: 1.6; }
   </style>
 </head>
 <body>
@@ -123,7 +70,6 @@
     <div class="page-header">
       <div class="container">
         <h1>든든설비 시공 사례</h1>
-        <p>직접 발로 뛰며 해결한 군산 현장의 생생한 기록입니다.</p>
       </div>
     </div>
 
@@ -137,8 +83,7 @@
               <th style="width:180px;">작성일</th>
             </tr>
           </thead>
-          <tbody id="portfolio-list">
-            </tbody>
+          <tbody id="portfolio-list"></tbody>
         </table>
 
         <div class="footer-buttons">
@@ -152,14 +97,15 @@
 
   <footer>
     <div class="container footer-inner">
-      <strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체 (든든설비)<br />
-      <strong>대표번호 :</strong> 0507-1427-4480 | <strong>지역 :</strong> 군산시 전북특별자치도 전역 출장<br />
-      Copyright(C) 2025 든든설비 All rights reserved.
+      <div>
+        <strong>상호 :</strong> 하수구·변기·싱크대 막힘 고압세척 전문업체<br />
+        <strong>대표번호 :</strong> 0507-1427-4480<br />
+        Copyright(C)2025 하수구·변기·싱크대 고압세척 전문업체 All rights reserved.
+      </div>
     </div>
   </footer>
 
   <script>
-    // 최신 시공 사례 리스트
     const posts = [
       { no: 4, title: "[군산 하수구] 수송동 변기 속 휴지걸이 봉, 석션으로 이물까지 확인한 든든설비", link: "251230-susong-toilet-suction.html", date: "2025.12.30" },
       { no: 3, title: "[군산 나운동 변기 막힘] 음식물(미나리) 원인 회수·이중 테스트 복구 – 든든설비", link: "251107-deundeun-naun-dong-toilet-minari-clog.html", date: "2025.11.07" },
@@ -177,7 +123,6 @@
       `).join('');
       document.getElementById("portfolio-list").innerHTML = html;
     }
-
     document.addEventListener("DOMContentLoaded", render);
   </script>
 </body>
