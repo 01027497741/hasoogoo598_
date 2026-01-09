@@ -91,6 +91,7 @@
     <changefreq>monthly</changefreq>
   </url>
 
+  <!-- ✅ 추가: 260109 수송동 변기 막힘 사례 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/260109-deundeun-susong-dong-toilet-clog.html</loc>
     <priority>0.8</priority>
