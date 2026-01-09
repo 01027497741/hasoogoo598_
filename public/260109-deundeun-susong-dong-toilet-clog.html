@@ -19,7 +19,6 @@
         padding: 20px;
         background-color: #fff;
     }
-    /* 스타일: 제목 */
     h1 {
         font-size: 22px;
         color: #333; 
@@ -34,17 +33,18 @@
         word-break: break-all;
     }
     
-    /* [포인트 컬러 클래스] */
-    .text-red {
-        color: #e53935; /* 강조용 빨간색 */
+    /* [브랜드 컬러 클래스] */
+    .text-orange {
+        color: #E65100; /* 가독성 좋은 진한 주황색 (포인트) */
         font-weight: bold;
     }
     .text-green {
-        color: #2e7d32; /* 설명용 짙은 녹색 */
+        color: #2E7D32; /* 신뢰감을 주는 짙은 초록색 (설명) */
         font-weight: bold;
     }
-    .text-blue {
-        color: #0056b3; /* 브랜드 신뢰 컬러 */
+    .text-brand {
+        color: #2E7D32; /* 브랜드명 기본 초록 */
+        font-weight: bold;
     }
 
     /* 이미지 스타일 */
@@ -70,8 +70,8 @@
 
     /* 박스 스타일 */
     .tip-box {
-        background-color: #fff3cd;
-        border: 1px solid #ffeeba;
+        background-color: #FFF3E0; /* 연한 주황빛 배경 */
+        border: 1px solid #FFE0B2;
         padding: 20px;
         border-radius: 5px;
         margin: 40px 0;
@@ -84,7 +84,7 @@
         display: block;
         width: 100%;
         text-align: center;
-        background-color: #e53935; /* 문의 버튼도 빨간색 계열로 강조 */
+        background-color: #EF6C00; /* 버튼: 선명한 주황색 */
         color: white !important;
         padding: 15px 0;
         text-decoration: none;
@@ -92,11 +92,13 @@
         font-weight: bold;
         margin: 30px 0;
         font-size: 18px;
+        box-shadow: 0 4px 6px rgba(239, 108, 0, 0.2);
     }
     .link-highlight {
-        color: #e53935; /* 링크 텍스트 빨간색 */
+        color: #EF6C00; /* 링크: 주황색 */
         font-weight: bold;
         text-decoration: none;
+        border-bottom: 1px solid #EF6C00;
     }
     
     .hashtags {
@@ -113,7 +115,7 @@
 
     <h1>군산변기막힘 | 수송동 변기 물이 내려가지 않던 상황, 작업 후 배수 확인</h1>
 
-    <p class="text-red">금요일입니다.</p>
+    <p class="text-orange">금요일입니다.</p>
     
     <p>한 주 마무리로 바쁘신 와중에, 갑작스런 변기 배수 문제까지 겹치면 생활이 바로 불편해집니다.</p>
     
@@ -122,9 +124,9 @@
     <p>안녕하세요.</p>
     
     <p>당신의 든든한 설비 파트너,<br>
-    <span class="text-red">군산 든든설비입니다.</span></p> <br>
+    <span class="text-brand">군산 든든설비입니다.</span></p> <br>
 
-    <p>오늘은 <strong>군산 수송동</strong> 현장 기록입니다.</p>
+    <p>오늘은 <strong style="color:#EF6C00;">군산 수송동</strong> 현장 기록입니다.</p>
     
     <p>변기 물이 내려가지 않아 확인해보니, 사진처럼 변기 내부에 탁한 물이 고여 있는 상태였습니다.</p>
 
@@ -169,7 +171,7 @@
     </p>
 
     <div class="tip-box">
-        <strong class="text-red">[생활 팁-✨]</strong><br><br>
+        <strong class="text-orange">[생활 팁-✨]</strong><br><br>
         변기에는 물에 잘 풀리지 않는 제품(물티슈 등)이 들어가면 배수에 영향을 줄 수 있어,<br>
         변기 투입은 피하시는 쪽이 관리에 도움이 됩니다.
     </div>
