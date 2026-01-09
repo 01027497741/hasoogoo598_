@@ -19,25 +19,37 @@
         padding: 20px;
         background-color: #fff;
     }
+    /* 스타일: 제목 */
     h1 {
         font-size: 22px;
-        color: #0056b3; 
+        color: #333; 
         border-bottom: 2px solid #eee;
         padding-bottom: 10px;
         margin-bottom: 30px;
         word-break: keep-all;
     }
     p {
-        margin-bottom: 20px; /* 문단 간 간격을 넉넉하게 줌 */
+        margin-bottom: 20px;
         font-size: 16px;
         word-break: break-all;
     }
-    /* 특정 문단은 줄바꿈을 강조 */
-    .text-block {
-        margin-bottom: 30px;
+    
+    /* [포인트 컬러 클래스] */
+    .text-red {
+        color: #e53935; /* 강조용 빨간색 */
+        font-weight: bold;
     }
+    .text-green {
+        color: #2e7d32; /* 설명용 짙은 녹색 */
+        font-weight: bold;
+    }
+    .text-blue {
+        color: #0056b3; /* 브랜드 신뢰 컬러 */
+    }
+
+    /* 이미지 스타일 */
     .img-wrapper {
-        margin: 40px 0; /* 이미지 위아래 여백 확보 */
+        margin: 40px 0;
         text-align: center;
     }
     .img-wrapper img {
@@ -49,12 +61,14 @@
     .img-caption {
         margin-top: 10px;
         font-size: 14px;
-        color: #666;
+        color: #888;
         background-color: #f9f9f9;
         padding: 8px 12px;
         border-radius: 4px;
         display: inline-block;
     }
+
+    /* 박스 스타일 */
     .tip-box {
         background-color: #fff3cd;
         border: 1px solid #ffeeba;
@@ -62,12 +76,15 @@
         border-radius: 5px;
         margin: 40px 0;
         font-size: 15px;
+        color: #333;
     }
+
+    /* 버튼 및 링크 스타일 */
     .cta-button {
         display: block;
         width: 100%;
         text-align: center;
-        background-color: #0056b3;
+        background-color: #e53935; /* 문의 버튼도 빨간색 계열로 강조 */
         color: white !important;
         padding: 15px 0;
         text-decoration: none;
@@ -76,11 +93,12 @@
         margin: 30px 0;
         font-size: 18px;
     }
-    .cta-link {
-        color: #0056b3;
+    .link-highlight {
+        color: #e53935; /* 링크 텍스트 빨간색 */
         font-weight: bold;
-        text-decoration: underline;
+        text-decoration: none;
     }
+    
     .hashtags {
         margin-top: 50px;
         color: #888;
@@ -95,28 +113,32 @@
 
     <h1>군산변기막힘 | 수송동 변기 물이 내려가지 않던 상황, 작업 후 배수 확인</h1>
 
-    <p>금요일입니다.</p>
+    <p class="text-red">금요일입니다.</p>
     
     <p>한 주 마무리로 바쁘신 와중에, 갑작스런 변기 배수 문제까지 겹치면 생활이 바로 불편해집니다.</p>
     
-    <br> <p>안녕하세요.</p>
-    
-    <p>당신의 든든한 설비 파트너,<br>
-    군산 든든설비입니다.</p>
-
     <br>
 
-    <p>오늘은 군산 수송동 현장 기록입니다.</p>
+    <p>안녕하세요.</p>
+    
+    <p>당신의 든든한 설비 파트너,<br>
+    <span class="text-red">군산 든든설비입니다.</span></p> <br>
+
+    <p>오늘은 <strong>군산 수송동</strong> 현장 기록입니다.</p>
     
     <p>변기 물이 내려가지 않아 확인해보니, 사진처럼 변기 내부에 탁한 물이 고여 있는 상태였습니다.</p>
 
     <br>
 
-    <p>현장에서는 먼저 상태를 확인하고,<br>
-    막힘 구간을 점검한 뒤 필요한 작업을 진행했습니다.</p>
+    <p class="text-green">
+    현장에서는 먼저 상태를 확인하고,<br>
+    막힘 구간을 점검한 뒤 필요한 작업을 진행했습니다.
+    </p>
     
-    <p>작업 후에는<br>
-    배수 상태가 정상적으로 돌아왔는지를 꼼꼼히 확인했습니다.</p>
+    <p class="text-green">
+    작업 후에는<br>
+    배수 상태가 정상적으로 돌아왔는지를 꼼꼼히 확인했습니다.
+    </p>
 
     <div class="img-wrapper">
         <img src="/images/260109-deundeun-susong-dong-toilet-jindan-01.jpg" alt="군산 수송동 변기 막힘으로 변기 내부에 탁한 물이 고여 있는 상태 사진(문구 삽입) | 군산 든든설비 대표이미지">
@@ -138,22 +160,22 @@
         <p class="img-caption">같은 장면(작업 후) 배수 상태 확인 사진입니다.</p>
     </div>
 
-    <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+    <hr style="border: 0; border-top: 1px dashed #ddd; margin: 40px 0;">
 
     <p style="text-align: center;">
-        <a href="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/" target="_blank" class="cta-link">
+        <a href="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/" target="_blank" class="link-highlight">
             [군산 든든설비 공식 홈페이지 바로가기-]
         </a>
     </p>
 
     <div class="tip-box">
-        <strong>[생활 팁-✨]</strong><br><br>
+        <strong class="text-red">[생활 팁-✨]</strong><br><br>
         변기에는 물에 잘 풀리지 않는 제품(물티슈 등)이 들어가면 배수에 영향을 줄 수 있어,<br>
         변기 투입은 피하시는 쪽이 관리에 도움이 됩니다.
     </div>
 
     <p style="text-align: center;">
-        <a href="https://blog.naver.com/hasoogoo598_" target="_blank" class="cta-link">
+        <a href="https://blog.naver.com/hasoogoo598_" target="_blank" class="link-highlight">
             [군산 든든설비 다양한 사례를 확인하세요-]
         </a>
     </p>
@@ -168,7 +190,7 @@
     </a>
 
     <p style="text-align: center;">
-        <a href="https://map.naver.com/p/search/%EA%B5%B0%EC%82%B0%ED%95%98%EC%88%98%EA%B5%AC/place/1693973445?c=10.00,0,0,0,dh&placePath=/home?entry=pll&from=map&fromPanelNum=2&timestamp=202601091053&locale=ko&svcName=map_pcv5&searchText=%EA%B5%B0%EC%82%B0%ED%95%98%EC%88%98%EA%B5%AC&from=map&fromPanelNum=2&timestamp=202508311024&locale=ko&svcName=map_pcv5&searchText=%EA%B5%B0%EC%82%B0%ED%95%98%EC%88%98%EA%B5%AC" target="_blank" class="cta-link">
+        <a href="https://map.naver.com/p/search/%EA%B5%B0%EC%82%B0%ED%95%98%EC%88%98%EA%B5%AC/place/1693973445?c=10.00,0,0,0,dh&placePath=/home?entry=pll&from=map&fromPanelNum=2&timestamp=202601091053&locale=ko&svcName=map_pcv5&searchText=%EA%B5%B0%EC%82%B0%ED%95%98%EC%88%98%EA%B5%AC&from=map&fromPanelNum=2&timestamp=202508311024&locale=ko&svcName=map_pcv5&searchText=%EA%B5%B0%EC%82%B0%ED%95%98%EC%88%98%EA%B5%AC" target="_blank" class="link-highlight">
             [군산 든든설비 네이버 플레이스 바로가기-]
         </a><br>
         <span style="font-size: 0.9em; color: #666; display:block; margin-top:5px;">전북특별자치도 군산시 정자로 45</span>
