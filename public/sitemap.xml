@@ -91,18 +91,21 @@
     <changefreq>monthly</changefreq>
   </url>
 
+  <!-- ✅ 추가: 260109 수송동 변기 막힘 사례 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/260109-deundeun-susong-dong-toilet-clog.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
+  <!-- ✅ 추가: 260213 미장동 변기 막힘(휴지걸이봉) + 재발 방지 포인트 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/260213-deundeun-gunsan-mijang-dong-toilet-clog-holderbar-prevention-check-points.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
+  <!-- ✅ 추가: 260324 문화동 변기 막힘(면도기 이물) + 변기뚜껑닫기 관리 포인트 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/260324-deundeun-munhwa-dong-toilet-clog-lid-management.html</loc>
     <priority>0.8</priority>
