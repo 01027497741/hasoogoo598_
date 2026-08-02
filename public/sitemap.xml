@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- 기본 페이지 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/</loc>
     <priority>1.0</priority>
@@ -62,6 +63,19 @@
   </url>
 
   <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/portfolio.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/pc-portfolio.html</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- 블로그 · 정보 페이지 -->
+  <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/250902-deundeun-gunsan-sink-trap-guide.html</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
@@ -91,35 +105,63 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- ✅ 추가: 260109 수송동 변기 막힘 사례 -->
+  <!-- 🆕 2026-01-09 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/260109-deundeun-susong-dong-toilet-clog.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
-  <!-- ✅ 추가: 260213 미장동 변기 막힘(휴지걸이봉) + 재발 방지 포인트 -->
+  <!-- 🆕 2026-02-13 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/260213-deundeun-gunsan-mijang-dong-toilet-clog-holderbar-prevention-check-points.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
-  <!-- ✅ 추가: 260324 문화동 변기 막힘(면도기 이물) + 변기뚜껑닫기 관리 포인트 -->
+  <!-- 🆕 2026-03-24 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/260324-deundeun-munhwa-dong-toilet-clog-lid-management.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
-  <!-- ✅ 추가: 260410 수송동 원룸 변기 막힘(빗 이물) + 석션 제거 사례 -->
+  <!-- 🆕 2026-04-10 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/260410-deundeun-susong-dong-toilet-clog-comb.html</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
-  <!-- ✅ 추가: 260802 옥구읍 싱크대 막힘 + 배관내시경 점검 사례 -->
+  <!-- 🆕 2026-05-12 -->
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/260512-deundeun-geum-dong-toilet-water-level-check.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- 🆕 2026-05-14 -->
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/260514-deundeun-gaejeong-myeon-sink-camera-check.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- 🆕 2026-05-17 -->
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/260517-deundeun-samhak-dong-sink-management.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- 🆕 2026-07-05 -->
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/260705-deundeun-heungnam-dong-bathroom-floor-drain-check.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- 🆕 2026-08-02 -->
   <url>
     <loc>https://하수구싱크대변기막힘뚫음업체.com/260802-deundeun-okgu-eup-sink-clog-camera-inspection.html</loc>
     <priority>0.8</priority>
