@@ -58,12 +58,12 @@
     <enclosure url="https://하수구싱크대변기막힘뚫음업체.com/images/260512-deundeun-geum-dong-toilet-guide.jpg" length="0" type="image/jpeg"/>
   </item>
 
-  <!-- 🆕 2026-04-10 신규 글 -->
+  <!-- 💡 요일 수정 적용 (Thu -> Fri) -->
   <item>
     <title><![CDATA[군산 수송동 군산변기 막힘, 원룸에서 들어간 빗 이물 제거 사례]]></title>
     <link>https://하수구싱크대변기막힘뚫음업체.com/260410-deundeun-susong-dong-toilet-clog-comb.html</link>
     <description><![CDATA[군산 수송동 원룸에서 변기 사용 중 물이 원활하지 않던 사례입니다. 내부 확인 과정에서 빗 이물질이 걸려 있는 것이 확인됐고, 순서대로 정리 후 물높이와 통수 반응까지 정상 범위로 복귀된 현장 기록입니다. 생활 관리 측면에서는 변기뚜껑닫기 습관의 중요성을 함께 정리했습니다.]]></description>
-    <pubDate>Thu, 10 Apr 2026 19:30:00 +0900</pubDate>
+    <pubDate>Fri, 10 Apr 2026 19:30:00 +0900</pubDate>
     <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/260410-deundeun-susong-dong-toilet-clog-comb.html</guid>
     <enclosure url="https://하수구싱크대변기막힘뚫음업체.com/images/260410-deundeun-susong-dong-toilet-check2.jpg" length="0" type="image/jpeg"/>
   </item>
@@ -78,13 +78,13 @@
     <enclosure url="https://하수구싱크대변기막힘뚫음업체.com/images/260324-deundeun-munhwa-dong-toilet-check.jpg" length="0" type="image/jpeg"/>
   </item>
 
-  <!-- 🆕 2026-02-13 신규 글 -->
+  <!-- 💡 URL 수정 적용 -->
   <item>
     <title><![CDATA[군산변기막힘 | 미장동 휴지걸이봉 이물질 사례 및 재발 방지 점검 포인트]]></title>
-    <link>https://하수구싱크대변기막힘뚫음업체.com/260213-deundeun-gunsan-mijang-dong-toilet-clog-holderbar-prevention-check-points.html</link>
+    <link>https://하수구싱크대변기막힘뚫음업체.com/260213_gunsan_mijang_toilet_clog_rod_prevention_check_points.html</link>
     <description><![CDATA[군산 미장동 변기 막힘 현장에서 휴지걸이봉 이물질이 안쪽에 걸려 배수가 느려지던 사례입니다. 석션으로 원인을 회수하고 2~3회 물내림 테스트로 정상 복귀를 확인했으며, 집에서 바로 점검할 수 있는 재발 방지 포인트를 정리했습니다.]]></description>
     <pubDate>Fri, 13 Feb 2026 19:08:00 +0900</pubDate>
-    <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/260213-deundeun-gunsan-mijang-dong-toilet-clog-holderbar-prevention-check-points.html</guid>
+    <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/260213_gunsan_mijang_toilet_clog_rod_prevention_check_points.html</guid>
     <enclosure url="https://하수구싱크대변기막힘뚫음업체.com/images/260213-deundeun-gunsan-mijang-dong-toilet-holderbar-extract.jpg" length="0" type="image/jpeg"/>
   </item>
 
@@ -148,17 +148,21 @@
     <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/pc-camera.html</guid>
   </item>
 
+  <!-- 💡 발행일 누락 수정 적용 -->
   <item>
     <title><![CDATA[군산 싱크대 트랩 점검 가이드 | 든든설비]]></title>
     <link>https://하수구싱크대변기막힘뚫음업체.com/250902-deundeun-gunsan-sink-trap-guide.html</link>
     <description><![CDATA[군산 싱크대 배수 트랩 구조와, 기름 슬러지로 인한 막힘을 줄이기 위한 점검·관리 방법을 정리한 안내 페이지입니다.]]></description>
+    <pubDate>Tue, 02 Sep 2025 19:30:00 +0900</pubDate>
     <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/250902-deundeun-gunsan-sink-trap-guide.html</guid>
   </item>
 
+  <!-- 💡 발행일 누락 수정 적용 -->
   <item>
     <title><![CDATA[군산 배관·하수구 관리 체크리스트 | 든든설비]]></title>
     <link>https://하수구싱크대변기막힘뚫음업체.com/gunsan-plumbing-holiday-checklist.html</link>
     <description><![CDATA[연휴 전후로 점검하면 좋은 하수구·변기·싱크대 관리 항목을 정리한 체크리스트 페이지입니다. 막힘을 예방하기 위한 기본 관리 요령을 담았습니다.]]></description>
+    <pubDate>Sat, 04 Oct 2025 19:30:00 +0900</pubDate>
     <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/gunsan-plumbing-holiday-checklist.html</guid>
   </item>
 
