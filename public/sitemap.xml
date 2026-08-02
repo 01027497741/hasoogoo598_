@@ -119,4 +119,11 @@
     <changefreq>weekly</changefreq>
   </url>
 
+  <!-- ✅ 추가: 260802 옥구읍 싱크대 막힘 + 배관내시경 점검 사례 -->
+  <url>
+    <loc>https://하수구싱크대변기막힘뚫음업체.com/260802-deundeun-okgu-eup-sink-clog-camera-inspection.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
 </urlset>
