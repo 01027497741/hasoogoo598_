@@ -5,7 +5,7 @@
   <link>https://하수구싱크대변기막힘뚫음업체.com</link>
   <description><![CDATA[군산 하수구·변기·싱크대 막힘, 고압세척과 배관 내시경으로 신속하고 정확하게 해결합니다. 경력과 장비를 갖춘 믿을 수 있는 군산 배관 전문 서비스입니다.]]></description>
   <language>ko</language>
-  <pubDate>Fri, 09 Jan 2026 11:31:00 +0900</pubDate>
+  <pubDate>Sun, 02 Aug 2026 13:45:00 +0900</pubDate>
   <lastBuildDate>Sun, 02 Aug 2026 13:45:00 +0900</lastBuildDate>
 
   <!-- 🆕 2026-08-02 신규 글 -->
@@ -58,7 +58,7 @@
     <enclosure url="https://하수구싱크대변기막힘뚫음업체.com/images/260512-deundeun-geum-dong-toilet-guide.jpg" length="0" type="image/jpeg"/>
   </item>
 
-  <!-- 💡 요일 수정 적용 (Thu -> Fri) -->
+  <!-- 🆕 2026-04-10 신규 글 -->
   <item>
     <title><![CDATA[군산 수송동 군산변기 막힘, 원룸에서 들어간 빗 이물 제거 사례]]></title>
     <link>https://하수구싱크대변기막힘뚫음업체.com/260410-deundeun-susong-dong-toilet-clog-comb.html</link>
@@ -78,7 +78,7 @@
     <enclosure url="https://하수구싱크대변기막힘뚫음업체.com/images/260324-deundeun-munhwa-dong-toilet-check.jpg" length="0" type="image/jpeg"/>
   </item>
 
-  <!-- 💡 URL 수정 적용 -->
+  <!-- 🆕 2026-02-13 신규 글 -->
   <item>
     <title><![CDATA[군산변기막힘 | 미장동 휴지걸이봉 이물질 사례 및 재발 방지 점검 포인트]]></title>
     <link>https://하수구싱크대변기막힘뚫음업체.com/260213_gunsan_mijang_toilet_clog_rod_prevention_check_points.html</link>
@@ -116,12 +116,21 @@
     <enclosure url="https://하수구싱크대변기막힘뚫음업체.com/images/251107-deundeun-naun-dong-toilet-minari-solution.jpg" length="0" type="image/jpeg"/>
   </item>
 
+  <!-- 💡 순서 재배치 적용 -->
   <item>
-    <title><![CDATA[군산 변기 막힘, 뜯어보니 딱딱한 '시멘트'가? 배관내시경으로 확인한 전후 비교]]></title>
-    <link>https://하수구싱크대변기막힘뚫음업체.com/gunsan_toilet_cement_before_after.html</link>
-    <description><![CDATA[인테리어 공사 후 남은 시멘트가 변기 배수부를 막았던 군산 수송동 현장. 배관내시경으로 막힘 원인을 확인하고, 특수 장비로 제거한 전후 기록입니다.]]></description>
-    <pubDate>Fri, 22 Aug 2025 20:35:00 +0900</pubDate>
-    <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/gunsan_toilet_cement_before_after.html</guid>
+    <title><![CDATA[군산 배관·하수구 관리 체크리스트 | 든든설비]]></title>
+    <link>https://하수구싱크대변기막힘뚫음업체.com/gunsan-plumbing-holiday-checklist.html</link>
+    <description><![CDATA[연휴 전후로 점검하면 좋은 하수구·변기·싱크대 관리 항목을 정리한 체크리스트 페이지입니다. 막힘을 예방하기 위한 기본 관리 요령을 담았습니다.]]></description>
+    <pubDate>Sat, 04 Oct 2025 19:30:00 +0900</pubDate>
+    <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/gunsan-plumbing-holiday-checklist.html</guid>
+  </item>
+
+  <item>
+    <title><![CDATA[군산 싱크대 트랩 점검 가이드 | 든든설비]]></title>
+    <link>https://하수구싱크대변기막힘뚫음업체.com/250902-deundeun-gunsan-sink-trap-guide.html</link>
+    <description><![CDATA[군산 싱크대 배수 트랩 구조와, 기름 슬러지로 인한 막힘을 줄이기 위한 점검·관리 방법을 정리한 안내 페이지입니다.]]></description>
+    <pubDate>Tue, 02 Sep 2025 19:30:00 +0900</pubDate>
+    <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/250902-deundeun-gunsan-sink-trap-guide.html</guid>
   </item>
 
   <item>
@@ -131,7 +140,7 @@
     <pubDate>Mon, 01 Sep 2025 19:30:00 +0900</pubDate>
     <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/pc-hasoogoo.html</guid>
   </item>
-
+  
   <item>
     <title><![CDATA[주요 서비스 안내: 고압세척/관로탐지]]></title>
     <link>https://하수구싱크대변기막힘뚫음업체.com/pc-pressure.html</link>
@@ -139,7 +148,7 @@
     <pubDate>Mon, 01 Sep 2025 19:30:00 +0900</pubDate>
     <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/pc-pressure.html</guid>
   </item>
-
+  
   <item>
     <title><![CDATA[주요 서비스 안내: 배관내시경]]></title>
     <link>https://하수구싱크대변기막힘뚫음업체.com/pc-camera.html</link>
@@ -148,23 +157,14 @@
     <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/pc-camera.html</guid>
   </item>
 
-  <!-- 💡 발행일 누락 수정 적용 -->
   <item>
-    <title><![CDATA[군산 싱크대 트랩 점검 가이드 | 든든설비]]></title>
-    <link>https://하수구싱크대변기막힘뚫음업체.com/250902-deundeun-gunsan-sink-trap-guide.html</link>
-    <description><![CDATA[군산 싱크대 배수 트랩 구조와, 기름 슬러지로 인한 막힘을 줄이기 위한 점검·관리 방법을 정리한 안내 페이지입니다.]]></description>
-    <pubDate>Tue, 02 Sep 2025 19:30:00 +0900</pubDate>
-    <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/250902-deundeun-gunsan-sink-trap-guide.html</guid>
-  </item>
-
-  <!-- 💡 발행일 누락 수정 적용 -->
-  <item>
-    <title><![CDATA[군산 배관·하수구 관리 체크리스트 | 든든설비]]></title>
-    <link>https://하수구싱크대변기막힘뚫음업체.com/gunsan-plumbing-holiday-checklist.html</link>
-    <description><![CDATA[연휴 전후로 점검하면 좋은 하수구·변기·싱크대 관리 항목을 정리한 체크리스트 페이지입니다. 막힘을 예방하기 위한 기본 관리 요령을 담았습니다.]]></description>
-    <pubDate>Sat, 04 Oct 2025 19:30:00 +0900</pubDate>
-    <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/gunsan-plumbing-holiday-checklist.html</guid>
+    <title><![CDATA[군산 변기 막힘, 뜯어보니 딱딱한 '시멘트'가? 배관내시경으로 확인한 전후 비교]]></title>
+    <link>https://하수구싱크대변기막힘뚫음업체.com/gunsan_toilet_cement_before_after.html</link>
+    <description><![CDATA[인테리어 공사 후 남은 시멘트가 변기 배수부를 막았던 군산 수송동 현장. 배관내시경으로 막힘 원인을 확인하고, 특수 장비로 제거한 전후 기록입니다.]]></description>
+    <pubDate>Fri, 22 Aug 2025 20:35:00 +0900</pubDate>
+    <guid isPermaLink="true">https://하수구싱크대변기막힘뚫음업체.com/gunsan_toilet_cement_before_after.html</guid>
   </item>
 
 </channel>
 </rss>
+(이전에 드린 `sitemap.xml` 내부에도 260213 파일명이 하이픈으로 되어 있었으니, 이 부분도 꼭 언더바(`_`) 버전으로 맞춰서 올려주시면 404 에러 없이 100% 깔끔하게 작동합니다!)
