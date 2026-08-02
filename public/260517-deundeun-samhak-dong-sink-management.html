@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>군산 삼학동 군산싱크대 막힘, 하부장 점검으로 살펴본 관리 사례</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+        line-height: 1.8;
+        color: #333;
+        background-color: #f8f9fa;
+    }
+    .post-container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 25px 15px;
+        background-color: #fff;
+    }
+    
+    /* [조작가님 폼] 세련된 H1 타이틀 */
+    h1 {
+        font-size: 1.5rem;
+        color: #222;
+        line-height: 1.4;
+        border-left: 5px solid #2E7D32;
+        padding-left: 15px;
+        margin-bottom: 35px;
+        word-break: keep-all;
+    }
+    p {
+        margin-bottom: 22px;
+        font-size: 1.05rem;
+        word-break: keep-all;
+    }
+    
+    /* [브랜드 강조 컬러 및 밑줄] */
+    .text-orange {
+        color: #EF6C00;
+        font-weight: bold;
+    }
+    .text-green {
+        color: #2E7D32;
+        font-weight: bold;
+    }
+    .highlight-green-underline {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-color: #2E7D32;
+        text-decoration-thickness: 2px;
+        color: #2E7D32;
+        font-weight: bold;
+    }
+    .underline-text {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-color: #333;
+        text-decoration-thickness: 1px;
+    }
+
+    /* [조작가님 폼] 본문 강조 하이라이트 박스 */
+    .highlight-box {
+        background-color: #f1f8e9;
+        border-left: 4px solid #2E7D32;
+        padding: 15px;
+        margin: 35px 0;
+        font-style: italic;
+    }
+
+    /* 이미지 스타일 */
+    .img-wrapper {
+        margin: 45px 0;
+        text-align: center;
+    }
+    .img-wrapper img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .img-caption {
+        margin-top: 12px;
+        font-size: 0.9rem;
+        color: #666;
+        background-color: #f1f3f5;
+        padding: 10px;
+        border-radius: 6px;
+        display: inline-block;
+        word-break: keep-all;
+    }
+
+    /* 관리 가이드 팁 박스 */
+    .tip-box {
+        background-color: #fff8f1;
+        border: 1px solid #ffe0b2;
+        padding: 25px;
+        border-radius: 10px;
+        margin: 45px 0;
+        font-size: 0.95rem;
+    }
+    .tip-title {
+        display: inline-block;
+        background-color: #EF6C00;
+        color: #fff;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .tip-list {
+        padding-left: 20px;
+        margin: 0;
+        font-weight: bold;
+        color: #2E7D32;
+    }
+    .tip-list li {
+        margin-bottom: 10px;
+    }
+
+    /* 링크 프리뷰 박스 (네이버 스타일) */
+    .link-preview {
+        display: flex;
+        border: 1px solid #e2e2e2;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #333;
+        margin: 40px 0;
+        background: #fff;
+        overflow: hidden;
+        transition: background-color 0.2s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+    .link-preview:hover {
+        background-color: #f9f9f9;
+    }
+    .link-preview .link-img {
+        width: 140px;
+        min-height: 110px;
+        background-color: #f0f0f0;
+        background-size: cover;
+        background-position: center;
+        border-right: 1px solid #e2e2e2;
+    }
+    .link-preview .link-info {
+        padding: 18px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .link-preview .link-title {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #222;
+    }
+    .link-preview .link-desc {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.5;
+    }
+    .link-preview .link-url {
+        font-size: 13px;
+        color: #00A832;
+    }
+    @media (max-width: 600px) {
+        .link-preview { flex-direction: column; }
+        .link-preview .link-img { width: 100%; height: 160px; border-right: none; border-bottom: 1px solid #e2e2e2; }
+    }
+
+    .hashtags {
+        margin-top: 60px;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+        color: #999;
+        font-size: 0.85rem;
+    }
+</style>
+</head>
+<body>
+
+<div class="post-container">
+
+    <h1>군산 삼학동 군산싱크대 막힘,<br>하부장 점검으로 살펴본 관리 사례</h1>
+    
+    <p>처음에는 단순한 생활 불편처럼 느껴지지만<br>하부장 아래쪽을 열어보면<br>생각보다 다른 모습이 보이는 경우도 있습니다.</p>
+    
+    <p>이번 <span class="text-orange">군산 삼학동</span> 현장도<br>일요일 저녁 시간대에 연락을 주셨어요.</p>
+
+    <p>완전히 사용이 안 되는 상황은 아니었지만<br>하부장 아래쪽 상태와 안쪽 움직임을<br>조금 더 자세히 살펴볼 필요가 있는 상태였습니다.</p>
+
+    <p>싱크대 아래 공간은<br>평소에는 거의 열어보지 않는 곳이죠.</p>
+
+    <p>하지만 실제로는<br>배출 라인과 연결 상태,<br>생활 흔적이 가장 먼저 드러나는 구간이기도 합니다.</p>
+
+    <!-- 장비 세팅 및 진단 이미지 반영 -->
+    <div class="img-wrapper">
+        <img src="/images/260517-deundeun-samhak-dong-sink-jindan.jpg" alt="하부장 내부 구조와 장비 연결 상태를 살펴보는 장면 | 군산 든든설비">
+        <p class="img-caption">하부장 내부 구조와 장비 연결 상태를 살펴보는 장면입니다.</p>
+    </div>
+
+    <p>그래서 이번 작업은<br>하부장 내부 구조를 먼저 확인한 뒤<br>내시경 장비를 연결해 현재 배출 상태를 함께 살펴보는 방향으로 진행했어요.</p>
+
+    <div class="highlight-box">
+        <span class="text-green">이런 경우에는<br>겉으로 보이는 반응만으로 판단하기보다<br>안쪽 상태를 함께 확인하는 과정이 중요할 수 있어요.</span>
+    </div>
+
+    <p>특히 가정집 싱크대는<br>기름 성분이나 생활 찌꺼기가 반복적으로 쌓이면서<br>배출 움직임이 달라지는 경우가 적지 않거든요.</p>
+
+    <p>이번 삼학동 현장도<br>하부장 내부와 배출 라인을 차례대로 살펴보며<br>현재 상태를 확인하는 방향으로 이어졌습니다.</p>
+
+    <p>내시경 장비는<br>무조건 작동하는 기계라기보다<br>현재 상황을 조금 더 정확하게 보기 위해 활용하는 경우가 많습니다.</p>
+
+    <p>특히 일요일 저녁처럼<br>주방 활동이 몰리는 시간에는<br>작은 변화도 금방 불편으로 느껴질 수 있는데</p>
+
+    <p>그 때, 안쪽 움직임이나 배출 상태를 직접 살펴볼 수 있기 때문에<br>불필요한 작업을 줄이는 데도 도움이 되거든요.</p>
+
+    <p style="text-align: center; margin-top: 40px;">
+        <span class="highlight-green-underline">그래서 평소에도 아래와 같은 변화가 보인다면<br>초기에 한 번 살펴보는 쪽이 도움이 될 수 있어요.</span>
+    </p>
+
+    <div class="tip-box">
+        <div class="tip-title">싱크대 배수 점검 포인트</div>
+        <ul class="tip-list">
+            <li>물 내려가는 속도가 달라졌을 때</li>
+            <li>설거지 후 답답한 느낌이 이어질 때</li>
+            <li>하부장 주변 상태가 평소와 다르게 느껴질 때</li>
+        </ul>
+        <p class="text-orange" style="margin-top: 20px;">이런 변화가 있다면<br>무리하게 계속 사용하는 것보다 현재 상태를 한 번 체크해 보는 편이 좋습니다.</p>
+    </div>
+
+    <p>군산 삼학동 사례처럼<br>처음에는 작은 불편으로 시작되는 경우가 많이 있습니다.</p>
+
+    <p>이럴수록 억지로 사용을 이어가기보다<br>현재 상태를 먼저 점검해 보는 선택이 더 나을 수 있습니다.</p>
+
+    <a href="https://blog.naver.com/hasoogoo598_" target="_blank" class="link-preview" rel="noopener noreferrer">
+        <div class="link-img" style="background-image: url('/images/logo-thumbnail.jpg');"></div>
+        <div class="link-info">
+            <div class="link-title">군산 든든설비 | 당신의 든든한 설비 파트너</div>
+            <div class="link-desc">시공으로 끝나는 관계가 아닌, 관리로 시작되는 인연을 믿습니다. 든든설비는 정확한 진단으로 과잉 시공을 막고, 투명한 과정으로 신뢰를 쌓으며, 재발 방지를 위한 관리 솔루션까지 함께 고민합니다.</div>
+            <div class="link-url">blog.naver.com</div>
+        </div>
+    </a>
+
+    <div class="highlight-box">
+        <span class="text-orange">든든설비는</span><br><br>
+        보이는 현상만 정리하는 데 그치지 않고<br>왜 이런 변화가 반복되었는지까지 함께 살펴보는 쪽을 중요하게 보고 있어요.
+    </div>
+
+    <p class="text-orange" style="text-align: center; margin-top: 30px;">편하게 문의 주시면<br>든든하게 함께 살펴보겠습니다.<br>문의전화 : 0507-1427-4480</p>
+
+    <a href="https://xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com/" target="_blank" class="link-preview" rel="noopener noreferrer">
+        <div class="link-img" style="background-image: url('/images/main-work-thumbnail.jpg');"></div>
+        <div class="link-info">
+            <div class="link-title">하수구·싱크대·변기막힘뚫음 | 고압세척·배관내시경 - 군산 든든설비</div>
+            <div class="link-desc">군산 하수구·변기·싱크대 막힘, 고압세척과 배관 내시경으로 신속하고 정확하게 해결합니다. 경력과 장비를 갖춘 믿을 수 있는 군산 배관 전문 서비스입니다.</div>
+            <div class="link-url">xn--2e0boog3jmpe8zecpfsulwvbl6ly7d9qtgqk56pwnh.com</div>
+        </div>
+    </a>
+
+    <a href="https://map.naver.com/p/search/하수구막힘변기막힘싱크대막힘고압세척" target="_blank" class="link-preview" rel="noopener noreferrer">
+        <div class="link-img" style="background-image: url('/images/map-thumbnail.jpg');"></div>
+        <div class="link-info">
+            <div class="link-title">네이버지도</div>
+            <div class="link-desc">하수구막힘변기막힘싱크대막힘고압세척<br>전북특별자치도 군산시 정자로 45</div>
+            <div class="link-url">map.naver.com</div>
+        </div>
+    </a>
+
+    <div class="hashtags">
+        #군산싱크대막힘 #군산하수구막힘 #삼학동싱크대막힘 #삼학동하수구 #군산배관점검 #하부장점검 #내시경점검 #군산싱크대배출 #군산든든설비 #하수구막힘변기막힘싱크대막힘고압세척
+    </div>
+
+</div>
+
+</body>
+</html>
